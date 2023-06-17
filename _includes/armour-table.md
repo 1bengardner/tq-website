@@ -2,7 +2,7 @@
 |-|-|-|-|-|
 {%- assign sorted-armour = site.data.armourdata | sort: "PRICE" -%}
 {%- for armour in sorted-armour %}
-  |{::nomarkdown}<span class="{{ armour.ELEMENT | downcase }}"><span class="record-name">{{ armour.NAME }}</span></span>{:/nomarkdown}<br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME }}.gif)|{{ armour.REQUIREMENT_VALUE }}|
+  |{::nomarkdown}<span class="{{ armour.ELEMENT | downcase }}"><span class="record-name">{{ armour.NAME }}</span></span>{:/nomarkdown}<br />![{{ armour.NAME | downcase }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif)|{{ armour.REQUIREMENT_VALUE }}|
   {%- assign fill = armour.DEFENCE | times: 100 | divided_by: 40 -%}{::nomarkdown}{% include bar.html fill=fill text=armour.DEFENCE %}{:/nomarkdown}|
   {%- assign test = armour.REDUCTION | round -%}
   {%- if test != 0 -%}
