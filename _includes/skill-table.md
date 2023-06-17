@@ -33,11 +33,13 @@
       Damage
     {%- endif -%}
   {%- endcapture -%}
+  {%- assign permitted-weapons = skill.PERMITTED_WEAPONS | remove: "'" | remove: "{" | remove: "}" | replace: ", ", " and " -%}
   
   {% unless visible == "true" -%}
     {% continue %}
   {%- endunless %}
   |{::nomarkdown}<span class="{{ skill.ELEMENT | downcase }}"><span class="record-name">{{ skill.NAME }}</span></span>
+  {%- if include.type == "Warrior" and permitted-weapons != "Melee" -%}<br /><span class="bar-descriptor">{{ permitted-weapons }} only</span>{%- endif -%}
   {%- if damage > 0 -%}
     <div class="bar"><span class="bar-fill" style="width:{{ damage }}%;"></span></div><span class="bar-descriptor">{{ action-word }}</span>
   {%- endif %}{:/nomarkdown}|
@@ -46,6 +48,14 @@
     - Hits {{ skill.MULTIPLIER }} times<br />
   {%- elsif skill.CATEGORY == "Life Steal Damage" -%}
     - Heals for {{ skill.MULTIPLIER }}% of damage dealt<br />
+  {%- elsif skill.CATEGORY == "Accurate Damage" -%}
+    - Accuracy is doubled while using this skill<br />
+  {%- elsif skill.CATEGORY == "Reduced Accuracy Damage" -%}
+    - Accuracy is halved while using this skill<br />
+  {%- elsif skill.CATEGORY == "Critical Damage" -%}
+    - Critical chance is quadrupled while using this skill<br />
+  {%- elsif skill.CATEGORY == "No Defence Damage" -%}
+    - Enemy defence is reduced by two thirds while using this skill<br />
   {%- endif %}
   {%- if skill.USER_EFFECTS != "{}" -%}
     - Alters user stats<br />
