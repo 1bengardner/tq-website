@@ -1,6 +1,6 @@
 ---
 layout: compendium-page
-title: "Miscellaneous Items"
+title: "Items"
 ---
 
 - [Quest Items](#quest-items)
