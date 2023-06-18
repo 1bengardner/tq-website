@@ -14,7 +14,7 @@
       true
     {%- endif -%}
   {%- endcapture -%}
-  {%- capture damage -%}
+  {%- capture relative-damage -%}
     {%- if skill.CATEGORY == "Multi-Hit Damage" -%}
       {{ skill.MULTIPLIER | times: 100 | divided_by: 10 }}
     {%- elsif skill.CATEGORY contains "Heal" -%}
@@ -25,7 +25,7 @@
       {{ skill.MULTIPLIER | times: 100 | divided_by: 750 }}
     {%- endif %}
   {%- endcapture -%}
-  {%- assign damage = damage | round -%}
+  {%- assign relative-damage = relative-damage | round -%}
   {%- capture action-word -%}
     {%- if skill.CATEGORY contains "Heal" -%}
       Healing
@@ -38,10 +38,10 @@
   {% unless visible == "true" -%}
     {% continue %}
   {%- endunless %}
-  |{::nomarkdown}<span class="{{ skill.ELEMENT | downcase }}"><span class="record-name">{{ skill.NAME }}</span></span>
+  |{::nomarkdown}<span class="record-name{% if skill.ELEMENT != "Physical" %}{{ skill.ELEMENT | downcase | prepend: " " }}{% endif %}">{{ skill.NAME }}</span>
   {%- if include.type == "Warrior" and permitted-weapons != "Melee" -%}<br /><span class="bar-descriptor">{{ permitted-weapons }} only</span>{%- endif -%}
-  {%- if damage > 0 -%}
-    <div class="bar"><span class="bar-fill" style="width:{{ damage }}%;"></span></div><span class="bar-descriptor">{{ action-word }}</span>
+  {%- if relative-damage > 0 -%}
+    {% include bar.html fill=relative-damage text=action-word %}
   {%- endif %}{:/nomarkdown}|
   {{- skill.EP_USED }}|
   {%- if skill.CATEGORY == "Multi-Hit Damage" -%}
