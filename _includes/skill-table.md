@@ -49,13 +49,13 @@
   {%- elsif skill.CATEGORY == "Life Steal Damage" -%}
     - Heals for {{ skill.MULTIPLIER }}% of damage dealt<br />
   {%- elsif skill.CATEGORY == "Accurate Damage" -%}
-    - Accuracy is doubled while using this skill<br />
+    - 2x accuracy<br />
   {%- elsif skill.CATEGORY == "Reduced Accuracy Damage" -%}
-    - Accuracy is halved while using this skill<br />
+    - 0.5x accuracy<br />
   {%- elsif skill.CATEGORY == "Critical Damage" -%}
-    - Critical chance is quadrupled while using this skill<br />
+    - 4x crit chance<br />
   {%- elsif skill.CATEGORY == "No Defence Damage" -%}
-    - Enemy defence is reduced by two thirds while using this skill<br />
+    - Ignore enemy defence<br />
   {%- endif %}
   {%- if skill.USER_EFFECTS != "{}" -%}
     - Alters user stats<br />
