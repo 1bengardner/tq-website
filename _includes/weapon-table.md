@@ -10,7 +10,7 @@
 {%- endcapture -%}
 {%- assign weapons-categories = site.data.weapondata | group_by: "CATEGORY" -%}
 
-|Weapon|{{ requirement | slice: 0, 3 }}.|Accuracy|Power|Crit Chance<br />{::nomarkdown}<span class="bar-descriptor">(Bar scaled to 25%)</span>{:/nomarkdown}|
+|Weapon|{{ requirement | slice: 0, 3 }}.|Accuracy|Power|Crit Chance<br />{::nomarkdown}<span class="bar-descriptor">Max. 25%</span>{:/nomarkdown}|
 |-|-|-|-|-|-|
 {%- for weapons-category in weapons-categories -%}
 {%- assign sorted-weapons-category = weapons-category.items | sort: "PRICE" -%}

@@ -1,4 +1,4 @@
-|Shield|Str.|Defence|Block Chance<br />{::nomarkdown}<span class="bar-descriptor">(Bar scaled to 11%)</span>{:/nomarkdown}|Reduction|
+|Shield|Str.|Defence|Block Chance<br />{::nomarkdown}<span class="bar-descriptor">Max. 11%</span>{:/nomarkdown}|Reduction|
 |-|-|-|-|-|
 {%- assign sorted-shields = site.data.shielddata | sort: "PRICE" -%}
 {%- for shield in sorted-shields %}
