@@ -5,14 +5,14 @@
 .bar {
   margin-top: 1em;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--solarized-mono2);
   border-radius: 0.5em;
 }
   
 .bar-fill {
   display: block;
   height: 0.5em;
-  background-color: rgba(101, 123, 131, 1);
+  background-color: var(--solarized-mono00);
   border-radius: 0.5em;
 }
 
@@ -20,6 +20,15 @@
   text-transform: uppercase;
   font-size: .6em;
   vertical-align: super;
+}
+
+.earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
+  padding: 0 0.3em;
+  border-radius: 0.3em;
+  white-space: nowrap;
+  &.record-name {
+    border-radius: 0.8em 0.3em;    
+  }
 }
 
 .earth {
@@ -58,11 +67,40 @@
   background: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0));
 }
 
-.earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
-  padding: 0 0.3em;
-  border-radius: 0.3em;
-  white-space: nowrap;
-  &.record-name {
-    border-radius: 0.8em 0.3em;    
+@media (prefers-color-scheme: dark) {
+  .earth {
+    background-color: #2a4010;
   }
+
+  .water {
+    background-color: #1f4758;
+  }
+
+  .fire {
+    background-color: #4e3822;
+  }
+
+  .poison {
+    background-color: #23501e;
+  }
+
+  .ice {
+    background-color: #1a5a5a;
+  }
+
+  .lightning {
+    background-color: #444420;
+  }
+
+  .frostfire {
+    background: linear-gradient(to right, #1a5a5a, #4e3822);
+  }
+
+  .elemental {
+    background: linear-gradient(#2a4010, #1f4758, #4e3822);
+  }
+
+  .physical {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  }  
 }
