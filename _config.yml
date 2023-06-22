@@ -6,3 +6,9 @@ theme: minima
 remote_theme: jekyll/minima
 minima:
   skin: solarized
+header_pages:
+  - weapons.md
+  - armour.md
+  - shields.md
+  - miscellaneous.md
+  - skills.md
