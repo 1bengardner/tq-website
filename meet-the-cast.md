@@ -34,19 +34,3 @@ title: "Meet the cast!"
 ## Foxy
 
 {::nomarkdown}{% include profile-blurb.html character="Foxy" text="Foxy is a Maine Coon who can evade damage with her unpredictable movements." %}{:/nomarkdown}
-
-## ???
-
-{::nomarkdown}{% include profile-blurb.html character="hidden" text="This secret character can mitigate attacks with his suit of armour." %}{:/nomarkdown}
-
-## ???
-
-{::nomarkdown}{% include profile-blurb.html character="hidden" text="This secret character is resilient against magic of all kinds." %}{:/nomarkdown}
-
-## ???
-
-{::nomarkdown}{% include profile-blurb.html character="hidden" text="This secret character is protected by a thick layer of soil." %}{:/nomarkdown}
-
-## ???
-
-{::nomarkdown}{% include profile-blurb.html character="hidden" text="This secret character can do anything." %}{:/nomarkdown}
