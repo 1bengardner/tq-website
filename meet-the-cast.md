@@ -1,5 +1,5 @@
 ---
-layout: compendium-page
+layout: page
 title: "Meet the cast!"
 ---
 

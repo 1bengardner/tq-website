@@ -1,14 +1,12 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "TQ Compendium" # the name of your site, e.g. ACME Corp.
+url: "https://toshesquest.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Toshe's Quest" # the name of your site, e.g. ACME Corp.
 description: ""
 theme: minima
 remote_theme: jekyll/minima
 minima:
   skin: solarized
 header_pages:
-  - weapons.md
-  - armour.md
-  - shields.md
-  - miscellaneous.md
-  - skills.md
+  - how-to-play.md
+  - compendium/welcome.html
+author:
+  name: Ben Gardner
