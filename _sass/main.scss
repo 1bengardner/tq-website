@@ -1,0 +1,36 @@
+.site-header.decorative-background {
+  background: url("/assets/img/background-light.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  @media (prefers-color-scheme: dark) {
+    background: url("/assets/img/background-dark.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.decorative-background .site-nav .page-link, .decorative-background .site-title {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+  @media (prefers-color-scheme: dark) {
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.decorative-background .site-title img {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 1));
+  @media (prefers-color-scheme: dark) {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
+  }
+}
+
+.callout {
+  max-width: 540px;
+  display: inline-block;
+  padding: 0.6em 1em;
+  background: var(--solarized-mono2);
+  border: 1px solid var(--solarized-mono1);
+  border-radius: 0.3em;
+  > p, > ul {
+    margin-bottom: 0;
+  }
+}
