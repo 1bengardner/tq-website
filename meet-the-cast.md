@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Meet the cast!"
+title: "Meet the Cast!"
 ---
 
 ## Toshe

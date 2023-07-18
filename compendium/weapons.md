@@ -1,6 +1,7 @@
 ---
 layout: compendium-page
 title: "Weapons"
+permalink: "/compendium/weapons"
 ---
 
 - [Melee Weapons](#melee-weapons)

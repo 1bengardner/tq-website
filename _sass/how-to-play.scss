@@ -1,0 +1,96 @@
+@media (max-width: 819px) {
+  .instruction-section {
+    .callout, .nelvin-small {
+      display: none;
+    }
+  }
+  .large-screens-only {
+    display: none;
+  }
+}
+@media (min-width: 820px) {
+  .small-screens-only {
+    display: none;
+  }
+}
+
+.instruction-section {
+  position: relative;
+  --glow: rgba(64, 224, 255, 1);
+  
+  .callout {
+    margin-top: -10px;
+    margin-left: 0.5em;
+    position: absolute;
+    filter: drop-shadow(0 0 2px var(--glow));
+  }
+  .nelvin-small {
+    position: absolute;
+    filter: drop-shadow(0 0 2px var(--glow));
+  }
+}
+
+.nelvin-small {
+  margin-right: 0.3em;
+  width: 88px;
+  transition: 0.06s ease;
+}
+
+.nelvin {
+  margin-right: 0.6em;
+  width: 176px;
+  transition: 0.06s ease;
+}
+
+.figure {
+  margin-top: 1em;
+  width: 740px;
+}
+
+.nelvin:active, .nelvin-small:active {
+  transform: rotate(-20deg);
+}
+
+.game-text {
+  font-family: Garamond, serif;
+  @media (prefers-color-scheme: light) {
+    color: #704F16;
+  }
+}
+  
+.item-number {
+  position: absolute;
+  font-size: 0.6em;
+  top: 3px;
+  left: 3px;
+  background-color: var(--solarized-mono3);
+  border-radius: 0.3em;
+  padding: 0 0.4em;
+  text-align: center;
+}
+
+.callout {
+  position: relative;
+}
+
+.callout:has(> .item-number) {
+  padding: 1em;
+}
+
+.toshe-square {
+  @media (prefers-color-scheme: light) {
+    color: #d31524;
+  }
+}
+
+.hp {
+  color: #1fc000;
+}
+
+.ep {
+  color: #e39200;
+}
+
+.xp {
+  color: #31b4bf;
+}

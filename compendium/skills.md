@@ -1,6 +1,7 @@
 ---
 layout: compendium-page
 title: "Skills"
+permalink: "/compendium/skills"
 ---
 
 - [Warrior Skills](#warrior-skills)
