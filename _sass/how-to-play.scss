@@ -94,3 +94,11 @@
 .xp {
   color: #31b4bf;
 }
+
+ul.horizontal > li {
+    display: inline-block;
+    
+    + li:before {
+      content: " ❧";
+    }
+}

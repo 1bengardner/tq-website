@@ -2,3 +2,7 @@ img.character {
   border: 4px ridge brown;
   margin-right: 1em;
 }
+
+img + .callout {
+  max-width: 540px;
+}
