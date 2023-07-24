@@ -22,7 +22,7 @@
     margin-top: -10px;
     margin-left: 0.5em;
     position: absolute;
-    filter: drop-shadow(0 0 2px var(--glow));
+    // filter: drop-shadow(0 0 2px var(--glow));
   }
   .nelvin-small {
     position: absolute;
@@ -62,11 +62,18 @@
   position: absolute;
   font-size: 0.6em;
   top: 3px;
-  left: 3px;
-  background-color: var(--solarized-mono3);
-  border-radius: 0.3em;
+  left: 1.75em;
+  // background-color: var(--solarized-mono3);
+  background-color: rgba(255, 255, 255, 0.875);
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(0, 0, 0, 0.875);
+  }
+  // border-radius: 0.3em;
+  border-radius: 2em;
   padding: 0 0.4em;
   text-align: center;
+  border: 1px solid var(--solarized-mono1);
+  border-top: 0;
 }
 
 .callout {
@@ -75,6 +82,18 @@
 
 .callout:has(> .item-number) {
   padding: 1em;
+}
+
+.nelvin ~ .callout, .nelvin-small + .callout, .instruction-section .callout {
+  background-color: rgba(255, 255, 255, 0.95);
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+  border-radius: 2em;
+  font-family: 'Comic Neue', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  .item-number {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  }
 }
 
 .toshe-square {
