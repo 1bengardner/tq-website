@@ -8,7 +8,7 @@
   {%- elsif armour.NAME contains "Hopalong Boots" -%}
     <br /><span class="bar-descriptor">Effect: Strike first</span>
   {%- endif -%}
-  <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif)|{{ armour.REQUIREMENT_VALUE }}|
+  <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif)<br />{% include price.md price=armour.PRICE %}|{{ armour.REQUIREMENT_VALUE }}|
   {%- assign fill = armour.DEFENCE | times: 100 | divided_by: 40 -%}{::nomarkdown}{% include bar.html fill=fill text=armour.DEFENCE %}{:/nomarkdown}|
   {%- assign test = armour.REDUCTION | round -%}
   {%- if test != 0 -%}

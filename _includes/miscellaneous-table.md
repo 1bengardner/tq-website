@@ -12,7 +12,7 @@
     {%- endif -%}
   {%- endcapture -%}
   {%- capture reward -%}
-    {%- if item.PRICE != "-1" and item.NAME != "Ominous Orb" and item.NAME contains "Orb" or item.NAME contains "Platinum Ball" or item.NAME contains "Gumball of Power" -%}
+    {%- if item.PRICE != "?" and item.NAME != "Ominous Orb" and item.NAME contains "Orb" or item.NAME contains "Platinum Ball" or item.NAME contains "Gumball of Power" -%}
       true
     {%- endif -%}
   {%- endcapture -%}
@@ -26,7 +26,7 @@
         {%- continue -%}
       {%- endunless -%}
     {%- when "Quest Item" -%}
-      {%- unless item.PRICE == "-1" -%}
+      {%- unless item.PRICE == "?" -%}
         {%- continue -%}
       {%- endunless -%}
     {%- when "Ring" -%}
@@ -38,9 +38,9 @@
         {%- continue -%}
       {%- endunless -%}
     {%- when "Other Item" -%}
-      {%- if consumable == "true" or item.PRICE == "-1" or item.NAME contains "Ring" or for-crafting == "true" or reward == "true" -%}
+      {%- if consumable == "true" or item.PRICE == "?" or item.NAME contains "Ring" or for-crafting == "true" or reward == "true" -%}
         {%- continue -%}
       {%- endif -%}
   {%- endcase %}
-  |{::nomarkdown}<span class="record-name">{{ item.NAME }}</span>{:/nomarkdown}<br />![{{ item.NAME }}](/assets/img/miscellaneous/{{ item.NAME | downcase }}.gif)|{{ item.INFO | replace: "*", " " }}|
+  |{::nomarkdown}<span class="record-name">{{ item.NAME }}</span>{:/nomarkdown}<br />![{{ item.NAME }}](/assets/img/miscellaneous/{{ item.NAME | downcase }}.gif)<br />{% include price.md price=item.PRICE %}|{{ item.INFO | replace: "*", " " }}|
 {%- endfor -%}

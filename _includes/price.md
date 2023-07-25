@@ -1,0 +1,1 @@
+<span style="border: 1px solid var(--solarized-mono1); border-top: 0; border-radius: 0.5em; padding: 0.3em; padding-top: 0;">![{{ Price }}](/assets/img/icons/euro.gif)<span style="vertical-align: middle; margin-left: 0.25em;">{{ include.price }}</span></span>
