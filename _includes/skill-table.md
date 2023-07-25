@@ -45,13 +45,13 @@
   {%- endif %}{:/nomarkdown}|
   {{- skill.EP_USED }}|{::nomarkdown}<ul>{:/nomarkdown}
   {%- if skill.USER_EFFECTS != "{}" -%}
-    {::nomarkdown}<li style="list-style-type: '❇'; border-left: 1px solid var(--solarized-mono1); border-radius: 0.3em; padding-left: 0.5em; margin-left: -0.5em;">Attacker stat changes:<ul>{:/nomarkdown}
+    {::nomarkdown}<li style="list-style-type: '☉'; border-left: 1px solid var(--solarized-mono1); border-radius: 0.3em; padding-left: 0.5em; margin-left: -0.5em;">User stat changes<ul style="list-style-type: none;">{:/nomarkdown}
     {%- assign effects = skill.USER_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
     {%- include skill-table-stats.md effects=effects -%}
     {::nomarkdown}</ul></li>{:/nomarkdown}
   {%- endif %}
   {%- if skill.TARGET_EFFECTS != "{}" -%}
-    {::nomarkdown}<li style="list-style-type: '☠'; border-left: 1px solid var(--solarized-mono1); border-radius: 0.3em; padding-left: 0.5em; margin-left: -0.5em;">Defender stat changes:<ul>{:/nomarkdown}
+    {::nomarkdown}<li style="list-style-type: '☍'; border-left: 1px solid var(--solarized-mono1); border-radius: 0.3em; padding-left: 0.5em; margin-left: -0.5em;">Opponent stat changes<ul style="list-style-type: none;">{:/nomarkdown}
     {%- assign effects = skill.TARGET_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
     {%- include skill-table-stats.md effects=effects -%}
     {::nomarkdown}</ul></li>{:/nomarkdown}
