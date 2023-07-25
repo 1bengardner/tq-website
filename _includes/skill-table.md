@@ -44,26 +44,32 @@
     {% include bar.html fill=relative-damage text=action-word %}
   {%- endif %}{:/nomarkdown}|
   {{- skill.EP_USED }}|
-  {%- if skill.CATEGORY == "Multi-Hit Damage" -%}
-    - Hits {{ skill.MULTIPLIER }} times<br />
-  {%- elsif skill.CATEGORY == "Life Steal Damage" -%}
-    - Heals for {{ skill.MULTIPLIER }}% of damage dealt<br />
-  {%- elsif skill.CATEGORY == "Accurate Damage" -%}
-    - 2x accuracy<br />
-  {%- elsif skill.CATEGORY == "Reduced Accuracy Damage" -%}
-    - 0.5x accuracy<br />
-  {%- elsif skill.CATEGORY == "Critical Damage" -%}
-    - 4x crit chance<br />
-  {%- elsif skill.CATEGORY == "No Defence Damage" -%}
-    - Ignore enemy defence<br />
-  {%- endif %}
   {%- if skill.USER_EFFECTS != "{}" -%}
-    - Alters user stats<br />
+    {::nomarkdown}<ul><li>Attacker stat changes:<ul>{:/nomarkdown}
+    {%- assign effects = skill.USER_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
+    {%- include skill-table-stats.md effects=effects -%}
+    {::nomarkdown}</ul></li></ul>{:/nomarkdown}
   {%- endif %}
   {%- if skill.TARGET_EFFECTS != "{}" -%}
-    - Alters enemy stats<br />
+    {::nomarkdown}<ul><li>Defender stat changes:<ul>{:/nomarkdown}
+    {%- assign effects = skill.TARGET_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
+    {%- include skill-table-stats.md effects=effects -%}
+    {::nomarkdown}</ul></li></ul>{:/nomarkdown}
+  {%- endif %}
+  {%- if skill.CATEGORY == "Multi-Hit Damage" -%}
+    {::nomarkdown}<ul><li>Hits {{ skill.MULTIPLIER }} times</li></ul>{:/nomarkdown}
+  {%- elsif skill.CATEGORY == "Life Steal Damage" -%}
+    {::nomarkdown}<ul><li>Heals for {{ skill.MULTIPLIER }}% of damage dealt</li></ul>{:/nomarkdown}
+  {%- elsif skill.CATEGORY == "Accurate Damage" -%}
+    {::nomarkdown}<ul><li>2x accuracy</li></ul>{:/nomarkdown}
+  {%- elsif skill.CATEGORY == "Reduced Accuracy Damage" -%}
+    {::nomarkdown}<ul><li>0.5x accuracy</li></ul>{:/nomarkdown}
+  {%- elsif skill.CATEGORY == "Critical Damage" -%}
+    {::nomarkdown}<ul><li>4x crit chance</li></ul>{:/nomarkdown}
+  {%- elsif skill.CATEGORY == "No Defence Damage" -%}
+    {::nomarkdown}<ul><li>Ignore enemy defence</li></ul>{:/nomarkdown}
   {%- endif %}
   {%- if skill.FLAG == "Recovering" -%}
-    - Lose a turn after using skill<br />
+    {::nomarkdown}<ul><li>Lose a turn after using skill</li></ul>{:/nomarkdown}
   {%- endif %}|
 {%- endfor %}

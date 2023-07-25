@@ -8,7 +8,9 @@
   {%- if test != 0 -%}
     {%- assign text = armour.REDUCTION | append: "% " | append: armour.ELEMENT -%}{::nomarkdown}{% include bar.html fill=armour.REDUCTION text=text element=armour.ELEMENT %}{:/nomarkdown}
   {%- endif -%}|
-  {%- if armour.NAME contains "Moon Armour" or armour.NAME contains "Ugly Disguise" -%}- Evade encounters
-  {%- elsif armour.NAME contains "Hopalong Boots" -%}- Strike first
+  {%- if armour.NAME contains "Moon Armour" or armour.NAME contains "Ugly Disguise" -%}
+    {::nomarkdown}<ul><li>Evade encounters</li></ul>{:/nomarkdown}
+  {%- elsif armour.NAME contains "Hopalong Boots" -%}
+    {::nomarkdown}<ul><li>Strike first</li></ul>{:/nomarkdown}
   {%- endif -%}|
 {%- endfor %}
