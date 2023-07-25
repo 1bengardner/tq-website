@@ -1,1 +1,1 @@
-![{{ Price }}](/assets/img/icons/euro.gif)<span style="vertical-align: middle; margin-left: 0.25em;">{{ include.price }}</span>
+![Price](/assets/img/icons/euro.gif)<span style="vertical-align: middle; margin-left: 0.25em;">{{ include.price }}</span>
