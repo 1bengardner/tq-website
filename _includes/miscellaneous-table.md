@@ -42,5 +42,5 @@
         {%- continue -%}
       {%- endif -%}
   {%- endcase %}
-  |{::nomarkdown}<span class="record-name">{{ item.NAME }}</span>{:/nomarkdown}<br />![{{ item.NAME }}](/assets/img/miscellaneous/{{ item.NAME | downcase }}.gif)<br />{% include price.md price=item.PRICE %}|{{ item.INFO | replace: "*", " " }}|
+  |{::nomarkdown}<span class="record-name">{{ item.NAME }}</span>{:/nomarkdown}<br />![{{ item.NAME }}](/assets/img/miscellaneous/{{ item.NAME | downcase }}.gif){% include price.md price=item.PRICE %}|{{ item.INFO | replace: "*", " " }}|
 {%- endfor -%}
