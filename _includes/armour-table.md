@@ -8,7 +8,8 @@
   {%- elsif armour.NAME contains "Hopalong Boots" -%}
     <br /><span class="bar-descriptor"><a href="#legend">Strike first</a></span>
   {%- endif -%}
-  <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif){% include price.md price=armour.PRICE %}|{{ armour.REQUIREMENT_VALUE }}|
+  <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif){% include price.md price=armour.PRICE -%}{% include dropped-by.md item-name=armour.NAME -%}
+  |{{ armour.REQUIREMENT_VALUE }}|
   {%- assign fill = armour.DEFENCE | times: 100 | divided_by: 40 -%}{::nomarkdown}{% include bar.html fill=fill text=armour.DEFENCE %}{:/nomarkdown}|
   {%- assign test = armour.REDUCTION | round -%}
   {%- if test != 0 -%}

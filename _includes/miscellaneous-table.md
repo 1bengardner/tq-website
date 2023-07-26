@@ -1,18 +1,23 @@
 |Item|Description|
 |-|-|
-{%- for item in site.data.miscellaneousdata -%}
+{%- for misc-item in site.data.miscellaneousdata -%}
   {%- capture consumable -%}
-    {%- if item.NAME contains "Mushroom" or item.NAME contains "Psilocybin" or item.NAME contains "The good stuff" or item.NAME contains "Leaf" or item.NAME contains "Mint" -%}
+    {%- if misc-item.NAME contains "Mushroom" or misc-item.NAME contains "Psilocybin" or misc-item.NAME contains "The good stuff" or misc-item.NAME contains "Leaf" or misc-item.NAME contains "Mint" -%}
       true
     {%- endif -%}
   {%- endcapture -%}
   {%- capture for-crafting -%}
-    {%- if item.NAME contains "Horn" or item.NAME contains "Ore" or item.NAME contains "Bar" or item.NAME contains "Crystal" or item.NAME contains "Shard" or item.NAME contains "Fragment" -%}
+    {%- if misc-item.NAME contains "Horn" or misc-item.NAME contains "Ore" or misc-item.NAME contains "Bar" or misc-item.NAME contains "Crystal" or misc-item.NAME contains "Shard" or misc-item.NAME contains "Fragment" -%}
+      true
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- capture quest-item -%}
+    {%- if misc-item.NAME contains "Key" or misc-item.NAME contains "Letter" or misc-item.NAME contains "Parchment" or misc-item.NAME contains "Map" or misc-item.NAME contains "Blueprint" or misc-item.NAME == "Oracular Orb" -%}
       true
     {%- endif -%}
   {%- endcapture -%}
   {%- capture reward -%}
-    {%- if item.PRICE != "?" and item.NAME != "Ominous Orb" and item.NAME contains "Orb" or item.NAME contains "Platinum Ball" or item.NAME contains "Gumball of Power" -%}
+    {%- if quest-item != "true" and misc-item.NAME != "Ominous Orb" and misc-item.NAME contains "Orb" or misc-item.NAME contains "Platinum Ball" or misc-item.NAME contains "Gumball of Power" -%}
       true
     {%- endif -%}
   {%- endcapture -%}
@@ -26,11 +31,11 @@
         {%- continue -%}
       {%- endunless -%}
     {%- when "Quest Item" -%}
-      {%- unless item.PRICE == "?" -%}
+      {%- unless quest-item == "true" -%}
         {%- continue -%}
       {%- endunless -%}
     {%- when "Ring" -%}
-      {%- unless item.NAME contains "Ring" -%}
+      {%- unless misc-item.NAME contains "Ring" -%}
         {%- continue -%}
       {%- endunless -%}
     {%- when "Reward" -%}
@@ -38,9 +43,10 @@
         {%- continue -%}
       {%- endunless -%}
     {%- when "Other Item" -%}
-      {%- if consumable == "true" or item.PRICE == "?" or item.NAME contains "Ring" or for-crafting == "true" or reward == "true" -%}
+      {%- if consumable == "true" or quest-item == "true" or misc-item.NAME contains "Ring" or for-crafting == "true" or reward == "true" -%}
         {%- continue -%}
       {%- endif -%}
   {%- endcase %}
-  |{::nomarkdown}<span class="record-name">{{ item.NAME }}</span>{:/nomarkdown}<br />![{{ item.NAME }}](/assets/img/miscellaneous/{{ item.NAME | downcase }}.gif){% include price.md price=item.PRICE %}|{{ item.INFO | replace: "*", " " }}|
+  |{::nomarkdown}<span class="record-name">{{ misc-item.NAME }}</span>{:/nomarkdown}<br />![{{ misc-item.NAME }}](/assets/img/miscellaneous/{{ misc-item.NAME | downcase }}.gif){% include price.md price=misc-item.PRICE %}{% include dropped-by.md item-name=misc-item.NAME -%}
+  |{{ misc-item.INFO | replace: "*", " " }}|
 {%- endfor -%}
