@@ -9,14 +9,14 @@
   <br /><span title="Block Chance"><span class="emoji">🛡</span> {{ include.enemy.bRate -}}%</span>
 {%- endif -%}</span><span>
 {%- if include.enemy.earthReduction != "0" -%}
-  <span title="Earth Reduction"><span class="emoji">🪨</span> {{ include.enemy.earthReduction -}}%</span><br />
+  <span title="Earth Reduction"><span class="emoji">🌳</span> {{ include.enemy.earthReduction -}}%</span><br />
 {%- endif -%}
 {%- if include.enemy.waterReduction != "0" -%}
-  <span title="Water Reduction"><span class="emoji">💧</span> {{ include.enemy.waterReduction -}}%</span><br />
+  <span title="Water Reduction"><span class="emoji">🌊</span> {{ include.enemy.waterReduction -}}%</span><br />
 {%- endif -%}
 {%- if include.enemy.fireReduction != "0" -%}
   <span title="Fire Reduction"><span class="emoji">🔥</span> {{ include.enemy.fireReduction -}}%</span><br />
 {%- endif -%}
 {%- if include.enemy.physicalReduction != "0" -%}
-  <span title="Physical Reduction"><span class="emoji">🧱</span> {{ include.enemy.physicalReduction -}}%</span>
+  <span title="Physical Reduction"><span class="emoji">🪨</span> {{ include.enemy.physicalReduction -}}%</span>
 {%- endif -%}</span></span>
