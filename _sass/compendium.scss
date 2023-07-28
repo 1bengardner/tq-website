@@ -37,6 +37,10 @@ table ul {
   vertical-align: top;
 }
 
+.quiet-text {
+  color: var(--solarized-mono1);
+}
+
 .earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
   padding: 0 0.3em;
   border-radius: 0.3em;

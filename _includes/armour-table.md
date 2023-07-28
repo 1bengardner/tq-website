@@ -2,7 +2,7 @@
 |-|-|-|-|
 {%- assign sorted-armour = site.data.armourdata | sort: "PRICE" -%}
 {%- for armour in sorted-armour %}
-  |{::nomarkdown}<span class="record-name">{{ armour.NAME }}</span>{:/nomarkdown}
+  |{::nomarkdown}<span id="{{ armour.NAME | downcase | replace: ' ', '-' }}" class="record-name">{{ armour.NAME }}</span>{:/nomarkdown}
   {%- if armour.NAME contains "Moon Armour" or armour.NAME contains "Ugly Disguise" -%}
     <br /><span class="bar-descriptor"><a href="#legend">Evade encounters</a></span>
   {%- elsif armour.NAME contains "Hopalong Boots" -%}
@@ -11,9 +11,10 @@
   <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif){% include price.md price=armour.PRICE -%}{% include dropped-by.md item-name=armour.NAME -%}
   |{{ armour.REQUIREMENT_VALUE }}|
   {%- assign fill = armour.DEFENCE | times: 100 | divided_by: 40 -%}{::nomarkdown}{% include bar.html fill=fill text=armour.DEFENCE %}{:/nomarkdown}|
-  {%- assign test = armour.REDUCTION | round -%}
-  {%- if test != 0 -%}
+  {%- if armour.REDUCTION != "0" -%}
     {%- assign text = armour.REDUCTION | append: "% " | append: armour.ELEMENT -%}{::nomarkdown}{% include bar.html fill=armour.REDUCTION text=text element=armour.ELEMENT %}{:/nomarkdown}
+  {%- else -%}
+    <span class="quiet-text">None</span>
   {%- endif -%}|
 {%- endfor %}
 

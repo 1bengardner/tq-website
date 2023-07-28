@@ -47,6 +47,6 @@
         {%- continue -%}
       {%- endif -%}
   {%- endcase %}
-  |{::nomarkdown}<span class="record-name">{{ misc-item.NAME }}</span>{:/nomarkdown}<br />![{{ misc-item.NAME }}](/assets/img/miscellaneous/{{ misc-item.NAME | downcase }}.gif){% include price.md price=misc-item.PRICE %}{% include dropped-by.md item-name=misc-item.NAME -%}
+  |{::nomarkdown}<span id="{{ misc-item.NAME | downcase | replace: ' ', '-' }}" class="record-name">{{ misc-item.NAME }}</span>{:/nomarkdown}<br />![{{ misc-item.NAME }}](/assets/img/miscellaneous/{{ misc-item.NAME | downcase }}.gif){% include price.md price=misc-item.PRICE %}{% include dropped-by.md item-name=misc-item.NAME -%}
   |{{ misc-item.INFO | replace: "*", " " }}|
 {%- endfor -%}
