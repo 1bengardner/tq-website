@@ -41,6 +41,23 @@ table ul {
   color: var(--solarized-mono1);
 }
 
+.enemy-level {
+  float: right;
+  border: ridge #7bb4b9 2px;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.enemy-image {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  border: 4px ridge;
+}
+
 .earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
   padding: 0 0.3em;
   border-radius: 0.3em;
