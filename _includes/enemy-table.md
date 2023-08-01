@@ -18,7 +18,7 @@
     {%- if enemy.RARITY == "LEGENDARY" -%}
       #ffffc0
     {%- endif -%}
-  {%- endcapture -%}|<span id="{{ enemy.IDENTIFIER | downcase | replace: ' ', '-' }}" class="record-name">{{ enemy.NAME }}</span><span class="enemy-level" title="Level">{{ enemy.LEVEL }}</span><br /><span title="HP"><span class="emoji">❤</span> {{ enemy.hp }}</span>
+  {%- endcapture -%}|<span class="enemy-level" title="Level">{{ enemy.LEVEL }}</span><span id="{{ enemy.IDENTIFIER | downcase | replace: ' ', '-' }}" class="record-name">{{ enemy.NAME }}</span><br /><span title="HP"><span class="emoji">❤</span> {{ enemy.hp }}</span>
   {%- if enemy.LIVING == "1" -%}
     <span title="Drops potions" class="emoji" style="font-size: 0.5em; vertical-align: super;"> 🩸</span>
   {%- endif -%}
