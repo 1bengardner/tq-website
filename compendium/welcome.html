@@ -4,6 +4,32 @@ title: "Toshe's Quest Compendium"
 permalink: "/compendium"
 ---
 
+<label for="link-selector">Start typing to search...</label>
+<input list="compendium-links" id="link-selector" autofocus />
+<datalist id="compendium-links">
+{%- for weapon in site.data.weapondata -%}
+  <option value="weapons#{{ weapon.NAME | downcase | replace: ' ', '-' }}">{{ weapon.NAME }}</option>
+{%- endfor -%}
+{%- for armour in site.data.armourdata -%}
+  <option value="armour#{{ armour.NAME | downcase | replace: ' ', '-' }}">{{ armour.NAME }}</option>
+{%- endfor -%}
+{%- for shield in site.data.shielddata -%}
+  <option value="shields#{{ shield.NAME | downcase | replace: ' ', '-' }}">{{ shield.NAME }}</option>
+{%- endfor -%}
+{%- for misc-item in site.data.miscellaneousdata -%}
+  <option value="miscellaneous#{{ misc-item.NAME | downcase | replace: ' ', '-' }}">{{ misc-item.NAME }}</option>
+{%- endfor -%}
+{%- for skill in site.data.skilldata -%}
+  <option value="skills#{{ skill.NAME | downcase | replace: ' ', '-' }}">{{ skill.NAME }}</option>
+{%- endfor -%}
+{%- for enemy in site.data.enemydata -%}
+  <option value="enemies#{{ enemy.IDENTIFIER | downcase | replace: ' ', '-' }}">{{ enemy.NAME }}</option>
+{%- endfor -%}
+</datalist>
+
+<h2>
+  Sections
+</h2>
 {%- assign relative_page_paths = layout.header_pages -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 {%- if titles_size > 0 -%}
@@ -18,3 +44,17 @@ permalink: "/compendium"
 </ul>
 {%- endif -%}
 <a href="/">← Return to the main site</a>
+
+<script type="text/javascript">
+  const dropdown = document.getElementById('link-selector');
+  let madeSelection = false;
+
+  dropdown.addEventListener('keydown', (e) => {
+    madeSelection = e.key === undefined || e.key === "Enter";
+  });
+  dropdown.addEventListener('input', (e) => {
+    if (madeSelection) {
+      window.location.href = e.target.value;
+    }
+  });
+</script>

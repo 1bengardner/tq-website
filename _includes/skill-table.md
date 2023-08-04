@@ -38,7 +38,7 @@
   {% unless visible == "true" -%}
     {% continue %}
   {%- endunless %}
-  |{::nomarkdown}<span class="record-name{% if skill.ELEMENT != "Physical" %}{{ skill.ELEMENT | downcase | prepend: " " }}{% endif %}">{{ skill.NAME }}</span>
+  |{::nomarkdown}<span id="{{ skill.NAME | downcase | replace: ' ', '-' }}" class="record-name{% if skill.ELEMENT != "Physical" %}{{ skill.ELEMENT | downcase | prepend: " " }}{% endif %}">{{ skill.NAME }}</span>
   {%- if include.type == "Warrior" and permitted-weapons != "Melee" -%}<br /><span class="bar-descriptor">{{ permitted-weapons }} only</span>{%- endif -%}
   {%- if relative-damage > 0 -%}
     {% include bar.html fill=relative-damage text=action-word %}
