@@ -8,23 +8,23 @@ permalink: "shortcuts"
 
 |Command|Shortcut|
 |-|-|-|
-|![Hard Disk](/assets/img/icons/save.gif)|Ctrl + S|
-|![Eighth Note](/assets/img/icons/music.gif)|Ctrl + M|
-|![Two Eighth Notes](/assets/img/icons/sfx.gif)|Ctrl + ,|
-|![Body Armour](/assets/img/icons/inventory.gif)|I|
-|![Back Arrow](/assets/img/icons/back.gif)|I|
-|![X](/assets/img/icons/cancel.gif)|X|
-|![Potion](/assets/img/icons/potion.gif)|P|
-|<span class="game-text">Mission Log</span> ![Log Book](/assets/img/icons/mission log.gif)|Q|
+|![Hard Disk](/assets/img/icons/save.gif "Save your game")|Ctrl + S|
+|![Eighth Note](/assets/img/icons/music.gif "Toggle background music")|Ctrl + M|
+|![Two Eighth Notes](/assets/img/icons/sfx.gif "Toggle sound effects")|Ctrl + ,|
+|![Body Armour](/assets/img/icons/inventory.gif "View inventory")|I|
+|![Back Arrow](/assets/img/icons/back.gif "Go back")|I|
+|![X](/assets/img/icons/cancel.gif "Cancel")|X|
+|![Potion](/assets/img/icons/potion.gif "Drink a vial of life fluid")|P|
+|<span class="game-text" title="Toggle Mission Log">Mission Log ![Log Book](/assets/img/icons/mission log.gif)</span>|Q|
 
 ## Overworld
 
 |Command|Shortcut|
 |-|-|-|
-|![Up Arrow](/assets/img/icons/up.gif)|W|
-|![Left Arrow](/assets/img/icons/left.gif)|A|
-|![Down Arrow](/assets/img/icons/down.gif)|S|
-|![Right Arrow](/assets/img/icons/right.gif)|D|
+|![Up Arrow](/assets/img/icons/up.gif "Move up")|W|
+|![Left Arrow](/assets/img/icons/left.gif "Move left")|A|
+|![Down Arrow](/assets/img/icons/down.gif "Move down")|S|
+|![Right Arrow](/assets/img/icons/right.gif "Move right")|D|
 |Perform action 1|1|
 |Perform action 2|2|
 |Perform action 3|3|
@@ -34,9 +34,9 @@ permalink: "shortcuts"
 
 |Command|Shortcut|
 |-|-|-|
-|![Shield](/assets/img/icons/defend.gif)|J|
-|![Sword](/assets/img/icons/attack.gif)|K|
-|![Running Man](/assets/img/icons/flee.gif)|L|
+|![Shield](/assets/img/icons/defend.gif "Defend")|J|
+|![Sword](/assets/img/icons/attack.gif "Attack")|K|
+|![Running Man](/assets/img/icons/flee.gif "Try to run away")|L|
 |Use skill 1|1|
 |Use skill 2|2|
 |Use skill 3|3|
