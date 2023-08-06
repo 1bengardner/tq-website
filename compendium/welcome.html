@@ -49,20 +49,13 @@ permalink: "/compendium"
 <a href="/">← Return to the main site</a>
 
 <script type="text/javascript">
-  function emojiToSectionName(emoji) {
-    if (emoji === "⚔") {
-      return "weapons#"
-    } else if (emoji === "♖") {
-      return "armour#"
-    } else if (emoji === "☩") {
-      return "shields#"
-    } else if (emoji === "☄") {
-      return "miscellaneous#"
-    } else if (emoji === "✨") {
-      return "skills#"
-    } else if (emoji === "☠") {
-      return "enemies#"
-    }
+  emojiToSectionName = {
+    "⚔": "weapons#",
+    "♖": "armour#",
+    "☩": "shields#",
+    "☄": "miscellaneous#",
+    "✨": "skills#",
+    "☠": "enemies#",
   }
 
   const dropdown = document.getElementById('link-selector');
@@ -74,7 +67,7 @@ permalink: "/compendium"
   dropdown.addEventListener('input', (e) => {
     if (madeSelection) {
       console.log(e.target.text);
-      window.location.href = "/compendium/" + emojiToSectionName(e.target.value.split(' ')[0]) + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replace(' ', '-');
+      window.location.href = "/compendium/" + emojiToSectionName[e.target.value.split(' ')[0]] + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replace(' ', '-');
     }
   });
 </script>
