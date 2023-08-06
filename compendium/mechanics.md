@@ -80,7 +80,7 @@ These stats are derived from your primary stats and the equipment you wield (and
 |Accuracy|Determines chance to hit.|
 |Critical Chance|Determines chance to land a critical hit.|
 |Critical Damage|Determines critical hit damage compared to a regular attack.|
-|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor">Flat value?</summary>This means that every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
+|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor">Flat value?</summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
 |Reduction|Decreases damage taken by a *percentage*. Calculated after defence.|
 |Block Chance|Determines chance to nullify an enemy attack against you.|
 
