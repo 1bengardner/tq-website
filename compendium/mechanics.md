@@ -20,7 +20,7 @@ Stats can be separated into [vital stats](#vital-stats), [primary stats](#primar
 
 ### Vital Stats
 
-You gain *XP* from defeating enemies. You gain more of it when enemies are closer to your level or above it.
+You gain *XP* from defeating enemies. You gain more XP when the enemies you defeat are closer to your level or above it.
 
 Each time you level up, you gain 20 *HP* and 20 *EP*, and your HP and EP are fully restored.
 
@@ -55,7 +55,7 @@ These stats are derived from your primary stats and the equipment you wield (and
 |Critical Damage|Determines critical hit damage compared to a regular attack.|
 |Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor">Flat value?</summary>This means that every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
 |Reduction|Decreases damage taken by a *percentage*. Calculated after defence.|
-|Block Chance|Determines chance to nullify an enemy attack.|
+|Block Chance|Determines chance to nullify an enemy attack against you.|
 
 ## Skills
 
