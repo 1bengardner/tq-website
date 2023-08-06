@@ -1,5 +1,5 @@
 {%- unless include.enemy.EUROS == "0" -%}
-  ![Euros](/assets/img/icons/euro.gif) <span style="font-size: 1.2em; vertical-align: middle;">{{ include.enemy.EUROS -}}</span>
+  ![Euros](/assets/img/icons/euro.gif) <span style="font-size: 1.2em; vertical-align: middle;">{{ include.enemy.EUROS | thousands_separated -}}</span>
 {%- endunless -%}
 {%- unless include.enemy.ITEMS == "{}" -%}
   {%- unless include.enemy.EUROS == "0" -%}

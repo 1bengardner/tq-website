@@ -23,6 +23,9 @@ permalink: "/compendium"
   <option value="skills#{{ skill.NAME | downcase | replace: ' ', '-' }}">{{ skill.NAME }}</option>
 {%- endfor -%}
 {%- for enemy in site.data.enemydata -%}
+  {%- if enemy.IDENTIFIER contains "Unfleeable" -%}
+    {%- continue -%}
+  {%- endif -%}
   <option value="enemies#{{ enemy.IDENTIFIER | downcase | replace: ' ', '-' }}">{{ enemy.NAME }}</option>
 {%- endfor -%}
 </datalist>
