@@ -67,7 +67,7 @@ permalink: "/compendium"
   dropdown.addEventListener('input', (e) => {
     if (madeSelection) {
       console.log(e.target.text);
-      window.location.href = "/compendium/" + emojiToSectionName[e.target.value.split(' ')[0]] + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replace(' ', '-');
+      window.location.href = "/compendium/" + emojiToSectionName[e.target.value.split(' ')[0]] + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replaceAll(' ', '-');
     }
   });
 </script>
