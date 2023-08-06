@@ -1,4 +1,4 @@
-<span style="display: flex; flex: 1; white-space: nowrap;"><span style="flex: 1; margin-right: 0.5em;"><span title="Attack"><span class="emoji">🗡</span> {{ include.enemy.damage -}}
+<span style="display: flex; flex: 1; white-space: nowrap; letter-spacing: -0.05em;"><span style="flex: 1; margin-right: 0.25em;"><span title="Attack"><span class="emoji">🗡</span> {{ include.enemy.damage -}}
 </span><br /><span title="Defence"><span class="emoji">👕</span> {{ include.enemy.defence -}}</span><br /><span title="Accuracy"><span class="emoji">🎯</span> {% if include.enemy.accuracy == "999" -%}Always{%- else -%}{{ include.enemy.accuracy | append: "%" }}{%- endif -%}</span>
 {%- if include.enemy.cRate != "0" -%}
   <br /><span title="Critical Chance"><span class="emoji">💥</span> {{ include.enemy.cRate -}}%</span>
