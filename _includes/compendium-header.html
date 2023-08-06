@@ -23,7 +23,7 @@
             {%- assign path = relative_path | prepend: "compendium/" -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | remove: "Miscellaneous " }}</a>
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | split: " " | last }}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>

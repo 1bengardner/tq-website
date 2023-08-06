@@ -4,9 +4,9 @@ title: "Mechanics"
 permalink: "/compendium/mechanics"
 ---
 
-<span class="callout">
+<strong class="callout">
   🚧 This page is a work in progress.
-</span>
+</strong>
 
 <div class="callout">
   <strong>Contents</strong>
@@ -36,6 +36,8 @@ permalink: "/compendium/mechanics"
 <span class="callout">
   🚧 This section isn't written yet.
 </span>
+
+---
 
 ## Stats
 
@@ -84,6 +86,8 @@ These stats are derived from your primary stats and the equipment you wield (and
 |Reduction|Decreases damage taken by a *percentage*. Calculated after defence.|
 |Block Chance|Determines chance to nullify an enemy attack against you.|
 
+---
+
 ## Skills
 
 You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
@@ -96,6 +100,8 @@ Stats will return to their original values after
 
 - Battle
 - Changing equipment in battle.
+
+---
 
 ## Items
 
@@ -132,6 +138,8 @@ Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This
 ### Passive Bonuses
 
 Some [Miscellaneous Items](miscellaneous) present passive bonuses that benefit you as long as that item is in your inventory. They do not need to be equipped.
+
+---
 
 ## Elements
 
