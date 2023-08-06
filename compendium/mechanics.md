@@ -8,7 +8,34 @@ permalink: "/compendium/mechanics"
   🚧 This page is a work in progress.
 </span>
 
+<div class="callout">
+  <strong>Contents</strong>
+  <ul class="horizontal">
+    <li>
+      <a href="#battle">Battle</a>
+    </li>
+    <li>
+      <a href="#stats">Stats</a>
+    </li>
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+    <li>
+      <a href="#items">Items</a>
+    </li>
+    <li>
+      <a href="#elements">Elements</a>
+    </li>
+  </ul>
+</div>
+
 ---
+
+## Battle
+
+<span class="callout">
+  🚧 This section isn't written yet.
+</span>
 
 ## Stats
 
@@ -111,7 +138,7 @@ Some [Miscellaneous Items](miscellaneous) present passive bonuses that benefit y
 ### Reductions
 
 <span class="callout">
-  🚧 This section still needs to be completed.
+  🚧 This section isn't written yet.
 </span>
 
 ### Elemental Ailments
