@@ -43,7 +43,7 @@ Stats can be separated into [vital stats](#vital-stats), [primary stats](#primar
 
 - **Vital stats** are the most important to watch and may fluctuate frequently.
 - **Primary stats** shape your overall development.
-- **Secondary stats** affect how well you do in battle.
+- **Secondary stats** affect your potency in battle.
 
 ### Vital Stats
 
@@ -151,10 +151,10 @@ Elementally-imbued weapons in general do not inflict ailments. However, *lightni
 |-|-|-|
 |Earth|30% chance to *ground*|Lose one turn.|
 |Lightning|20% chance to *paralyze*|Lose turns until recovery. 50% chance of recovery each turn.|
-|Poison|100% chance to *poison*|Lose approximately 2% of your max HP each turn.|
+|Poison|100% chance to *poison*|Take damage equal to approximately 2% of your max HP each turn.|
 |Water|50% chance to *drown* when 50% or more damage is dealt|Die immediately.|
 |Ice|15% chance to *freeze*|Lose turns until recovery. 25% chance of recovery each turn.|
-|Fire|25% chance to *ignite*|Lose approximately 25% of damage dealt by igniting attack in HP each turn until recovery. 25% chance of recovery each turn.|
+|Fire|25% chance to *ignite*|Take damage equal to approximately 25% of damage dealt by the original igniting attack each turn until recovery. 25% chance of recovery each turn.|
 |Petrification|100% chance to *petrify*|Lose turns until recovery. 25% chance of recovery each turn.|
 
 #### Additional Notes
