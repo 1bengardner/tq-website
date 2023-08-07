@@ -266,7 +266,7 @@ The specific elemental reduction that is applied depends on the element of the a
 |Lightning|Earth|
 |Poison|Earth|
 |Ice|Water|
-|Frostfire|50% Water, 50% Fire|
+|Frostfire|½ Water, ½ Fire|
 
 Unlike other [secondary bonuses](#secondary-stats), elemental reductions do not increase linearly with their corresponding primary stat.
 
