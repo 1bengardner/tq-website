@@ -24,4 +24,9 @@
 
 **Evade encounters** prevents random encounters while travelling.
 
+- [Moon Armour](#moon-armour)
+- [Ugly Disguise](#ugly-disguise)
+
 **Strike first** causes you to always take your turn first in battle.
+
+- [Hopalong Boots](#hopalong-boots)
