@@ -216,13 +216,13 @@ Elementally-imbued weapons in general do not inflict ailments. However, *lightni
 
 |Skill Element|Ailment|Effect|
 |-|-|-|
-|Earth|30% chance to *ground*|Lose one turn.|
-|Lightning|20% chance to *paralyze*|Lose turns until recovery. 50% chance of recovery each turn.|
-|Poison|100% chance to *poison*|Take damage equal to approximately 2% of your max HP each turn.|
-|Water|50% chance to *drown* when 50% or more damage is dealt|Die immediately.|
+|Earth|30% chance to be *grounded*|Lose one turn.|
+|Lightning|20% chance to be *paralyzed*|Lose turns until recovery. 50% chance of recovery each turn.|
+|Poison|100% chance to be *poisoned*|Take damage equal to approximately 2% of your max HP each turn.|
+|Water|50% chance to *drown* when you lose 50% max HP from the attack|Die immediately.|
 |Ice|15% chance to *freeze*|Lose turns until recovery. 25% chance of recovery each turn.|
 |Fire|25% chance to *ignite*|Take damage equal to approximately 25% of damage dealt by the original igniting attack each turn until recovery. 25% chance of recovery each turn.|
-|Petrification|100% chance to *petrify*|Lose turns until recovery. 25% chance of recovery each turn.|
+|Petrification|100% chance to be *petrified*|Lose turns until recovery. 25% chance of recovery each turn.|
 
 #### Additional Notes
 
