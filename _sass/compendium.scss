@@ -74,6 +74,12 @@ li.opponent-stat-changes {
   margin-left: -0.5em;
 }
 
+.compendium-link:hover::after {
+  content: '📖';
+  font-size: small;
+  margin-left: 0.125em;
+}
+
 .earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
   padding: 0 0.3em;
   border-radius: 0.3em;

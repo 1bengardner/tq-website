@@ -1,12 +1,8 @@
 ---
 layout: compendium-page
-title: "Mechanics"
-permalink: "/compendium/mechanics"
+title: "Game Guide"
+permalink: "/compendium/guide"
 ---
-
-<strong class="callout">
-  🚧 This page is a work in progress.
-</strong>
 
 <div class="callout">
   <strong>Contents</strong>
@@ -26,6 +22,9 @@ permalink: "/compendium/mechanics"
     <li>
       <a href="#battle">Battle</a>
     </li>
+    <li>
+      <a href="#party-members">Party Members</a>
+    </li>
   </ul>
 </div>
 
@@ -33,7 +32,7 @@ permalink: "/compendium/mechanics"
 
 ## Stats
 
-Stats can be separated into [vital stats](#vital-stats), [primary stats](#primary-stats) and [secondary stats](#secondary-stats).
+Stats can be grouped into [vital stats](#vital-stats), [primary stats](#primary-stats) and [secondary stats](#secondary-stats).
 
 - **Vital stats** are the most important to watch and may fluctuate frequently.
 - **Primary stats** shape your overall development.
@@ -112,7 +111,7 @@ Each time you level up, you gain 20 *HP* and 20 *EP*, and your HP and EP are ful
 
 ### Primary Stats
 
-Each time you level up, you gain 5 *Stat Points* to distribute among *Strength*, *Dexterity* and *Wisdom*.
+Each time you level up, you gain 5 *stat points* to distribute among *strength*, *dexterity* and *wisdom*.
 
 Each of the three primary stats increases your damage dealt with one or more weapon types, and increases one or more secondary stats.
 
@@ -130,20 +129,22 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 |Stat|Effect|
 |-|-|
-|Accuracy|Determines chance to hit.|
-|Base Damage|🚧 TBD|
-|Average Damage|🚧 TBD|
-|Critical Chance|Determines chance to land a critical hit.|
-|Critical Damage|Determines critical hit damage compared to a regular attack.|
-|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
-|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.|
-|Block Chance|Determines chance to nullify an enemy attack against you.|
+|Accuracy|Determines chance to hit.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Accuracy = `weapon's accuracy` + `dexterity` - 10{::nomarkdown}</details>{:/nomarkdown}|
+|Base Damage|Determines how much damage will be done with a [regular attack](#attacking).{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Base damage = [`power`](#power) × [`primary stat`](#primary-stats) / 10{::nomarkdown}</details>{:/nomarkdown}|
+|Average Damage|Determines how much damage will be done with a regular attack, accounting for accuracy, critical chance and critical damage.|
+|Critical Chance|Determines chance to land a critical hit.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Critical chance = `weapon's critical chance` × (1 + (`dexterity` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
+|Critical Damage|Determines critical hit damage compared to a regular attack.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Critical damage = `weapon's critical damage` × (1 + (`strength` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
+|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.{::nomarkdown}<details><summary class="bar-descriptor"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
+|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Reduction = `equipment's reduction` + 3 × √(`wisdom` - 10){::nomarkdown}</details>{:/nomarkdown}|
+|Block Chance|Determines chance to nullify an enemy attack against you.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Block chance = `shield's block chance` × (1 + (`dexterity` - 10) / 20){::nomarkdown}</details>{:/nomarkdown}|
 
 ---
 
 ## Skills
 
-Most skills require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
+Most <span class="compendium-link">[skills](skills)</span> require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
+
+There are <span class="compendium-link">[three](skills#avalanche)</span> <span class="compendium-link">[special](skills#melting-touch)</span> <span class="compendium-link">[skills](skills#hailstorm)</span> that may be used outside of battle in very specific scenarios.
 
 You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
 
@@ -153,29 +154,50 @@ Some skills alter user stats and/or opponent stats.
 
 Stats will return to their original values after
 
-- Battle
+- Battle, or
 - Changing equipment in battle.
 
 ---
 
 ## Items
 
-Items serve a variety of purposes. The two major categories of items are [equipment](#equipment) and [miscellaneous](#miscellaneous-items).
+Items serve a variety of purposes from boosting stats to providing access to new locations. Items can be grouped into [equipment](#equipment) and [miscellaneous items](#miscellaneous-items).
 
-You may carry up to *9* items, unless you have the [Chasmic Rucksack](miscellaneous#chasmic-rucksack), which allows you to carry up to *16*.
+You may carry up to *9* items, unless you have the <span class="compendium-link">[Chasmic Rucksack](miscellaneous#chasmic-rucksack)</span>, which allows you to carry up to *16*.
 
 ### Equipment
 
-In general, you can wield 1 [weapon](weapons), 1 piece of [armour](armour) and 1 [shield](shields) at a time. However, if you wield a [bow](weapons#bows), you may not wield a shield under most circumstances.
+In general, you can wield 1 <span class="compendium-link">[weapon](weapons)</span>, 1 piece of <span class="compendium-link">[armour](armour)</span> and 1 <span class="compendium-link">[shield](shields)</span> at a time. However, if you wield a <span class="compendium-link">[bow](weapons#bows)</span>, you may not wield a shield under most circumstances.
 
 You must meet the stat requirement of a piece of equipment in order to wield it.
+
+#### Power
+
+In general, equipment stats directly affect your secondary stats.
+
+There is a special case for *power*. It is a stat found only on weapons and it affects your damage.
+
+<details markdown=1><summary><em>What's the damage formula?</em></summary>
+
+- Base damage = `power` × [`primary stat`](#primary-stats) / 10
+
+</details>
+
+#### Wands
+
+*Regular attacks* with <span class="compendium-link">[wands](weapons#wands)</span> are peculiar for three reasons:
+
+- An enemy's physical reduction is not applied.
+- Only ⅓ of an enemy's defence is applied.
+- The average of an enemy's 3 elemental reductions is applied.
+  - If an enemy is immune to an element, that component is treated as 100% reduction in this average.
 
 #### Modified Equipment
 
 Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This is a regular piece of equipment with an additional enhancement.
 
 |Modifier Name|Stat Enhanced|Enhancement Amount|
-|-|-|
+|-|-|-|
 |Exotic|Sell price|+100% to +300%|
 |Big|Power|+2 to +4|
 |Keen|Critical chance|+1% to +2%|
@@ -194,13 +216,13 @@ Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This
 
 ### Miscellaneous Items
 
-[Miscellaneous items](miscellaneous) cannot be equipped (except for the [Scintillous Ring](miscellaneous#scintillous-ring)), but they are useful in other ways.
+<span class="compendium-link">[Miscellaneous items](miscellaneous)</span> cannot be equipped (except for the <span class="compendium-link">[Scintillous Ring](miscellaneous#scintillous-ring)</span>), but they are useful in other ways.
 
-- [**Quest items**](miscellaneous#quest-items) help you make progress by aiding you in getting past obstacles.
-- [**Consumable items**](miscellaneous#consumables) help you in battle. Some are consumed and activated with a regular attack.
-<span class="callout">
-  🚧 This section isn't complete yet.
-</span>
+- <span class="compendium-link">[**Quest items**](miscellaneous#quest-items)</span> help you make progress by aiding you in getting past obstacles.
+- <span class="compendium-link">[**Consumable items**](miscellaneous#consumables)</span> help you in battle. Some are consumed and activated with a regular attack.
+- <span class="compendium-link">[**Materials**](miscellaneous#materials)</span> like gems and ore can be combined to craft equipment when given to the right NPC.
+
+There are a few other miscellaneous items that you will find throughout the game that serve various purposes.
 
 #### Passive Bonuses
 
@@ -212,15 +234,75 @@ Some miscellaneous items present passive bonuses that benefit you as long as tha
 
 ### Reductions
 
-<span class="callout">
-  🚧 This section isn't written yet.
-</span>
+Reductions can be grouped into [physical reduction](#physical-reduction) and [elemental reductions](#elemental-reductions).
+
+#### Physical Reduction
+
+Physical reduction applies to all *non-elemental attacks* except regular attacks with [wands](#wands).
+
+Non-elemental attacks are attacks that are performed without an elementally-imbued weapon, using
+
+- A regular attack, or
+- A non-elemental skill.
+
+#### Elemental Reductions
+
+There are *3* different elemental reductions: earth, water and fire.
+
+Elemental reductions apply to all *elemental attacks* as well as regular attacks with wands.
+
+Elemental attacks are attacks that are performed using
+
+- An elemental skill, or
+- An elementally-imbued weapon.
+
+The specific elemental reduction that is applied depends on the element of the attack.
+
+|Attack Element|Reduction Element|
+|-|-|
+|Earth|Earth|
+|Water|Water|
+|Fire|Fire|
+|Lightning|Earth|
+|Poison|Earth|
+|Ice|Water|
+|Frostfire|50% Water, 50% Fire|
+
+Unlike other [secondary bonuses](#secondary-stats), elemental reductions do not increase linearly with their corresponding primary stat.
+
+<details markdown=1><summary>Wisdom–elemental reduction table</summary>
+
+|Wisdom|Elemental Reduction|
+|-|-|
+|10|+0%|
+|11|+3%|
+|12|+4%|
+|13|+5%|
+|14|+6%|
+|15|+6%|
+|16|+7%|
+|17|+7%|
+|18|+8%|
+|19|+9%|
+|20|+9%|
+|21|+9%|
+|22|+10%|
+|23|+10%|
+|24|+11%|
+|25|+11%|
+|26|+12%|
+|...|...|
+|51|+19%|
+|...|...|
+|104|+29%|
+
+</details>
 
 ### Elemental Ailments
 
 Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
 
-Elementally-imbued weapons in general do not inflict ailments. However, *lightning weapons* are special: While wielding one, non-elemental attacks have a chance of inflicting paralysis.
+Elementally-imbued weapons generally do not inflict ailments. However, *lightning weapons* are special: While wielding one, non-elemental attacks have a chance of inflicting paralysis.
 
 |Skill Element|Ailment|Effect|
 |-|-|-|
@@ -243,25 +325,27 @@ Elementally-imbued weapons in general do not inflict ailments. However, *lightni
 
 Battles may occur randomly while travelling, or as a result of events that happen.
 
-In battle, combatants consistently take turns using moves.
+In battle, combatants take turns using moves.
 
 ### Turn Order
 
 In general, you or the enemy are randomly selected to take the first turn. However, if you are wielding a bow, you will always go first.
 
+Turn order is maintained throughout the battle.
+
 ### Moves
 
 There are *3* basic combat moves always available to you.
 
-- **Attacking (![Sword](/assets/img/icons/attack.gif))** strikes the enemy with your equipped weapon.
-- **Defending (![Shield](/assets/img/icons/defend.gif))** increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
+- <span id="attacking">**Attacking** ![Sword](/assets/img/icons/attack.gif)</span> strikes the enemy with your equipped weapon. Also referred to as a *regular attack*.
+- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
   <details markdown=1 style="margin-bottom: 0.5em;"><summary class="bar-descriptor"><em>How much EP?</em></summary>
   
-  - EP restored = 5 + `wisdom`<sup>0.75</sup>
+  - EP restored = 5 + ∜`wisdom`<sup>3</sup>
   - EP boost = 1 + 9 × √`blocked damage`
   
   </details>
-- **Running away (![Running Man](/assets/img/icons/flee.gif))** attempts to flee from battle. If your level is not higher than the enemy's, there is a chance that the enemy will catch up.
+- **Running away** ![Running Man](/assets/img/icons/flee.gif) attempts to flee from battle. If your level is not higher than the enemy's, there is a chance that the enemy will catch up.
   <details markdown=1><summary class="bar-descriptor"><em>What's the chance to flee?</em></summary>
   
   - Chance to flee = 100% / (2 + `enemy level` - `your level`)
@@ -281,12 +365,30 @@ There are *3* basic combat moves always available to you.
 
 There are *2* special moves available in battle. These actions can also be performed outside of battle.
 
-- **Changing equipment (![Body Armour](/assets/img/icons/inventory.gif))** allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.
-- **Drinking a potion (![Potion](/assets/img/icons/potion.gif))** restores HP. It requires that you have at least one vial of life fluid.
+- **Changing equipment** ![Body Armour](/assets/img/icons/inventory.gif) allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.
+- **Drinking a potion** ![Potion](/assets/img/icons/potion.gif) restores HP. It requires you to have at least one vial of life fluid.
   <details markdown=1><summary class="bar-descriptor"><em>How much HP?</em></summary>
   
-  - HP restored = 50 + 10 × √`character level` - 10
+  - HP restored = 50 + 10 × √`your level` - 10
   
   </details>
   
 In addition to the five moves mentioned, you may use any of your [skills](#skills) for which you meet the requirements.
+
+---
+
+## Party Members
+
+You will encounter fighters who want to accompany you on your quest.
+
+Party members will join you in battle, taking their turn immediately after you. They have a set of skills and equipment that remains with them throughout your journey.
+
+An enemy may attack a party member. If a party member loses all their HP, they will be unable to fight until they rest at their house or an inn.
+
+Party members gain the same amount of XP as you after each battle. When they level up, they will gain 20 HP and allocate 5 stat points to one of their primary stats.
+
+|Party Member|Chosen Primary Stat|
+|-|-|
+|Dragan|Dexterity|
+|Qendresa|Strength|
+|Barrie|Wisdom|
