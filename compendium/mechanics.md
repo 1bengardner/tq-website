@@ -302,7 +302,7 @@ Unlike other [secondary bonuses](#secondary-stats), elemental reductions do not 
 
 Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
 
-Elementally-imbued weapons generally do not inflict ailments. However, *lightning weapons* are special: While wielding one, non-elemental attacks have a chance of inflicting paralysis.
+Elementally-imbued weapons generally do not inflict ailments. However, *lightning weapons* are special: while wielding one, non-elemental attacks have a chance of inflicting paralysis.
 
 |Skill Element|Ailment|Effect|
 |-|-|-|
