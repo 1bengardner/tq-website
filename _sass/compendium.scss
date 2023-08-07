@@ -58,6 +58,22 @@ table ul {
   border: 4px ridge;
 }
 
+li.user-stat-changes {
+  list-style-type: '☉';
+  border-left: 1px solid var(--solarized-mono1);
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  margin-left: -0.5em;
+}
+
+li.opponent-stat-changes {
+  list-style-type: '☍';
+  border-left: 1px solid var(--solarized-mono1);
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  margin-left: -0.5em;
+}
+
 .earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {
   padding: 0 0.3em;
   border-radius: 0.3em;
