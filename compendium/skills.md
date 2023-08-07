@@ -4,23 +4,23 @@ title: "Skills"
 permalink: "/compendium/skills"
 ---
 
-- [Warrior Skills](#warrior-skills)
-- [Archer Skills](#archer-skills)
-- [Mage Skills](#mage-skills)
-- [Miscellaneous Skills](#misc-skills)
+- [Melee Skills](#melee-skills)
+- [Bow Skills](#bow-skills)
+- [Wand Skills](#wand-skills)
+- [Miscellaneous Skills](#miscellaneous-skills)
 
-## Warrior Skills
+## Melee Skills
 
 {% include skill-table.md type="Warrior" %}
 
-## Archer Skills
+## Bow Skills
 
 {% include skill-table.md type="Archer" %}
 
-## Mage Skills
+## Wand Skills
 
 {% include skill-table.md type="Mage" %}
 
-## Misc. Skills
+## Miscellaneous Skills
 
 {% include skill-table.md type="Miscellaneous" %}

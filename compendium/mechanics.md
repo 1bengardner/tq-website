@@ -12,9 +12,6 @@ permalink: "/compendium/mechanics"
   <strong>Contents</strong>
   <ul class="horizontal">
     <li>
-      <a href="#battle">Battle</a>
-    </li>
-    <li>
       <a href="#stats">Stats</a>
     </li>
     <li>
@@ -26,16 +23,11 @@ permalink: "/compendium/mechanics"
     <li>
       <a href="#elements">Elements</a>
     </li>
+    <li>
+      <a href="#battle">Battle</a>
+    </li>
   </ul>
 </div>
-
----
-
-## Battle
-
-<span class="callout">
-  🚧 This section isn't written yet.
-</span>
 
 ---
 
@@ -139,9 +131,11 @@ These stats are derived from your primary stats and the equipment you wield (and
 |Stat|Effect|
 |-|-|
 |Accuracy|Determines chance to hit.|
+|Base Damage|🚧 TBD|
+|Average Damage|🚧 TBD|
 |Critical Chance|Determines chance to land a critical hit.|
 |Critical Damage|Determines critical hit damage compared to a regular attack.|
-|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor">Flat value?</summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
+|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.<br />{::nomarkdown}<details><summary class="bar-descriptor"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
 |Reduction|Decreases damage taken by a *percentage*. Calculated after defence.|
 |Block Chance|Determines chance to nullify an enemy attack against you.|
 
@@ -149,9 +143,11 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 ## Skills
 
+Most skills require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
+
 You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
 
-### Stat-altering Skills
+### Stat-Altering Skills
 
 Some skills alter user stats and/or opponent stats.
 
@@ -164,15 +160,17 @@ Stats will return to their original values after
 
 ## Items
 
+Items serve a variety of purposes. The two major categories of items are [equipment](#equipment) and [miscellaneous](#miscellaneous-items).
+
 You may carry up to *9* items, unless you have the [Chasmic Rucksack](miscellaneous#chasmic-rucksack), which allows you to carry up to *16*.
 
 ### Equipment
 
-In general, you can wield 1 weapon, 1 piece of armour and 1 shield at a time. However, if you wield a bow, you may not wield a shield under most circumstances.
+In general, you can wield 1 [weapon](weapons), 1 piece of [armour](armour) and 1 [shield](shields) at a time. However, if you wield a [bow](weapons#bows), you may not wield a shield under most circumstances.
 
 You must meet the stat requirement of a piece of equipment in order to wield it.
 
-#### Modified equipment
+#### Modified Equipment
 
 Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This is a regular piece of equipment with an additional enhancement.
 
@@ -194,9 +192,19 @@ Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This
 |Robust|Defence|+4 to +8|
 |Massive|Block chance|+2% to +4%|
 
-### Passive Bonuses
+### Miscellaneous Items
 
-Some [Miscellaneous Items](miscellaneous) present passive bonuses that benefit you as long as that item is in your inventory. They do not need to be equipped.
+[Miscellaneous items](miscellaneous) cannot be equipped (except for the [Scintillous Ring](miscellaneous#scintillous-ring)), but they are useful in other ways.
+
+- [**Quest items**](miscellaneous#quest-items) help you make progress by aiding you in getting past obstacles.
+- [**Consumable items**](miscellaneous#consumables) help you in battle. Some are consumed and activated with a regular attack.
+<span class="callout">
+  🚧 This section isn't complete yet.
+</span>
+
+#### Passive Bonuses
+
+Some miscellaneous items present passive bonuses that benefit you as long as that item is in your inventory. They do not need to be equipped.
 
 ---
 
@@ -210,7 +218,7 @@ Some [Miscellaneous Items](miscellaneous) present passive bonuses that benefit y
 
 ### Elemental Ailments
 
-Elemental attacks that deal damage (except Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
+Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
 
 Elementally-imbued weapons in general do not inflict ailments. However, *lightning weapons* are special: While wielding one, non-elemental attacks have a chance of inflicting paralysis.
 
@@ -228,3 +236,57 @@ Elementally-imbued weapons in general do not inflict ailments. However, *lightni
 
 - If you ignite while frozen, you will no longer be frozen, and vice versa.
 - If you are petrified while paralyzed and/or frozen, you will no longer be paralyzed and/or frozen.
+
+---
+
+## Battle
+
+Battles may occur randomly while travelling, or as a result of events that happen.
+
+In battle, combatants consistently take turns using moves.
+
+### Turn Order
+
+In general, you or the enemy are randomly selected to take the first turn. However, if you are wielding a bow, you will always go first.
+
+### Moves
+
+There are *3* basic combat moves always available to you.
+
+- **Attacking (![Sword](/assets/img/icons/attack.gif))** strikes the enemy with your equipped weapon.
+- **Defending (![Shield](/assets/img/icons/defend.gif))** increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
+  <details markdown=1 style="margin-bottom: 0.5em;"><summary class="bar-descriptor"><em>How much EP?</em></summary>
+  
+  - EP restored = 5 + `wisdom`<sup>0.75</sup>
+  - EP boost = 1 + 9 × √`blocked damage`
+  
+  </details>
+- **Running away (![Running Man](/assets/img/icons/flee.gif))** attempts to flee from battle. If your level is not higher than the enemy's, there is a chance that the enemy will catch up.
+  <details markdown=1><summary class="bar-descriptor"><em>What's the chance to flee?</em></summary>
+  
+  - Chance to flee = 100% / (2 + `enemy level` - `your level`)
+  
+  |Level Difference|Chance to Flee|
+  |-|-|
+  |0|50%|
+  |1|33%|
+  |2|25%|
+  |3|20%|
+  |4|16%|
+  |5|14%|
+  |...|...|
+  |10|8%|
+  
+  </details>
+
+There are *2* special moves available in battle. These actions can also be performed outside of battle.
+
+- **Changing equipment (![Body Armour](/assets/img/icons/inventory.gif))** allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.
+- **Drinking a potion (![Potion](/assets/img/icons/potion.gif))** restores HP. It requires that you have at least one vial of life fluid.
+  <details markdown=1><summary class="bar-descriptor"><em>How much HP?</em></summary>
+  
+  - HP restored = 50 + 10 × √`character level` - 10
+  
+  </details>
+  
+In addition to the five moves mentioned, you may use any of your [skills](#skills) for which you meet the requirements.
