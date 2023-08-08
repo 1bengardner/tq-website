@@ -11,10 +11,10 @@ permalink: "/compendium/guide"
       <a href="#stats">Stats</a>
     </li>
     <li>
-      <a href="#skills">Skills</a>
+      <a href="#items">Items</a>
     </li>
     <li>
-      <a href="#items">Items</a>
+      <a href="#skills">Skills</a>
     </li>
     <li>
       <a href="#elements">Elements</a>
@@ -140,25 +140,6 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 ---
 
-## Skills
-
-Most <span class="compendium-link">[skills](skills)</span> require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
-
-There are <span class="compendium-link">[three](skills#avalanche)</span> <span class="compendium-link">[special](skills#melting-touch)</span> <span class="compendium-link">[skills](skills#hailstorm)</span> that may be used outside of battle in very specific scenarios.
-
-You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
-
-### Stat-Altering Skills
-
-Some skills alter user stats and/or opponent stats.
-
-Stats will return to their original values after
-
-- Battle, or
-- Changing equipment in battle.
-
----
-
 ## Items
 
 Items serve a variety of purposes from boosting stats to providing access to new locations. Items can be grouped into [equipment](#equipment) and [miscellaneous items](#miscellaneous-items).
@@ -227,6 +208,25 @@ There are a few other miscellaneous items that you will find throughout the game
 #### Passive Bonuses
 
 Some miscellaneous items present passive bonuses that benefit you as long as that item is in your inventory. They do not need to be equipped.
+
+---
+
+## Skills
+
+Most <span class="compendium-link">[skills](skills)</span> require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
+
+There are <span class="compendium-link">[three](skills#avalanche)</span> <span class="compendium-link">[special](skills#melting-touch)</span> <span class="compendium-link">[skills](skills#hailstorm)</span> that may be used outside of battle in very specific scenarios.
+
+You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
+
+### Stat-Altering Skills
+
+Some skills alter user stats and/or opponent stats.
+
+Stats will return to their original values after
+
+- Battle, or
+- Changing equipment in battle.
 
 ---
 
