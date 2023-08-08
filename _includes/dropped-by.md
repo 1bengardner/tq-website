@@ -15,9 +15,9 @@
 {%- endcapture -%}
 {%- assign droppers = droppers-string | split: ";" -%}
 {%- if droppers.size > 0 -%}
-  <br />{::nomarkdown}<details><summary class="bar-descriptor">Dropped by</summary><ul>
+  {::nomarkdown}<details><summary class="small-text">Dropped by</summary><ul>
   {%- for dropper in droppers -%}
     <li>{:/nomarkdown}[{{ dropper | split: ", " | first }}](enemies#{{ dropper | split: ", " | last | downcase | replace: " ", "-" }}){::nomarkdown}</li>
   {%- endfor -%}
-  </details>{:/nomarkdown}
+  </ul></details>{:/nomarkdown}
 {%- endif -%}

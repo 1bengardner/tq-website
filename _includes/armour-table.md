@@ -4,9 +4,9 @@
 {%- for armour in sorted-armour %}
   |{::nomarkdown}<span id="{{ armour.NAME | downcase | replace: ' ', '-' }}" class="record-name">{{ armour.NAME }}</span>{:/nomarkdown}
   {%- if armour.NAME contains "Moon Armour" or armour.NAME contains "Ugly Disguise" -%}
-    <br /><span class="bar-descriptor"><a href="#legend">Evade encounters</a></span>
+    <br /><span class="small-text"><a href="#legend">Evade encounters</a></span>
   {%- elsif armour.NAME contains "Hopalong Boots" -%}
-    <br /><span class="bar-descriptor"><a href="#legend">Strike first</a></span>
+    <br /><span class="small-text"><a href="#legend">Strike first</a></span>
   {%- endif -%}
   <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif){% include price.md price=armour.PRICE -%}{% include dropped-by.md item-name=armour.NAME -%}
   |{{ armour.REQUIREMENT_VALUE }}|

@@ -1,3 +1,13 @@
+@keyframes expand {
+  from {
+    opacity: 0;
+    line-height: 0;
+  }
+}
+details[open] > :not(summary) {
+  animation: expand 0.3s;
+}
+
 .subsite-title {
   text-transform: uppercase;
   font-size: .6em;
@@ -31,7 +41,7 @@ table ul {
   border-radius: 0.5em;
 }
 
-.bar-descriptor {
+.small-text {
   text-transform: uppercase;
   font-size: .6em;
   vertical-align: top;
@@ -78,6 +88,10 @@ li.opponent-stat-changes {
   content: '📖';
   font-size: small;
   margin-left: 0.125em;
+}
+
+.game-info {
+  font-style: italic;  
 }
 
 .earth, .water, .fire, .poison, .ice, .lightning, .frostfire, .elemental, .physical {

@@ -129,14 +129,14 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 |Stat|Effect|
 |-|-|
-|Accuracy|Determines chance to hit.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Accuracy = `weapon's accuracy` + `dexterity` - 10{::nomarkdown}</details>{:/nomarkdown}|
-|Base Damage|Determines how much damage will be done with a [regular attack](#attacking).{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Base damage = [`power`](#power) × [`primary stat`](#primary-stats) / 10{::nomarkdown}</details>{:/nomarkdown}|
+|Accuracy|Determines chance to hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Accuracy = `weapon's accuracy` + `dexterity` - 10{::nomarkdown}</details>{:/nomarkdown}|
+|Base Damage|Determines how much damage will be done with a [regular attack](#attacking).{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Base damage = [`power`](#power) × [`primary stat`](#primary-stats) / 10{::nomarkdown}</details>{:/nomarkdown}|
 |Average Damage|Determines how much damage will be done with a regular attack, accounting for accuracy, critical chance and critical damage.|
-|Critical Chance|Determines chance to land a critical hit.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Critical chance = `weapon's critical chance` × (1 + (`dexterity` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
-|Critical Damage|Determines critical hit damage compared to a regular attack.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Critical damage = `weapon's critical damage` × (1 + (`strength` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
-|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.{::nomarkdown}<details><summary class="bar-descriptor"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
-|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Reduction = `equipment's reduction` + 3 × √(`wisdom` - 10){::nomarkdown}</details>{:/nomarkdown}|
-|Block Chance|Determines chance to nullify an enemy attack against you.{::nomarkdown}<details markdown=1><summary class="bar-descriptor"><em>What's the formula?</em></summary>{:/nomarkdown}Block chance = `shield's block chance` × (1 + (`dexterity` - 10) / 20){::nomarkdown}</details>{:/nomarkdown}|
+|Critical Chance|Determines chance to land a critical hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Critical chance = `weapon's critical chance` × (1 + (`dexterity` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
+|Critical Damage|Determines critical hit damage compared to a regular attack.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Critical damage = `weapon's critical damage` × (1 + (`strength` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
+|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.{::nomarkdown}<details><summary class="small-text"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
+|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Reduction = `equipment's reduction` + 3 × √(`wisdom` - 10){::nomarkdown}</details>{:/nomarkdown}|
+|Block Chance|Determines chance to nullify an enemy attack against you.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Block chance = `shield's block chance` × (1 + (`dexterity` - 10) / 20){::nomarkdown}</details>{:/nomarkdown}|
 
 ---
 
@@ -339,14 +339,14 @@ There are *3* basic combat moves always available to you.
 
 - <span id="attacking">**Attacking** ![Sword](/assets/img/icons/attack.gif)</span> strikes the enemy with your equipped weapon. Also referred to as a *regular attack*.
 - **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
-  <details markdown=1 style="margin-bottom: 0.5em;"><summary class="bar-descriptor"><em>How much EP?</em></summary>
+  <details markdown=1 style="margin-bottom: 0.5em;"><summary class="small-text"><em>How much EP?</em></summary>
   
   - EP restored = 5 + ∜`wisdom`<sup>3</sup>
   - EP boost = 1 + 9 × √`blocked damage`
   
   </details>
 - **Running away** ![Running Man](/assets/img/icons/flee.gif) attempts to flee from battle. If your level is not higher than the enemy's, there is a chance that the enemy will catch up.
-  <details markdown=1><summary class="bar-descriptor"><em>What's the chance to flee?</em></summary>
+  <details markdown=1><summary class="small-text"><em>What's the chance to flee?</em></summary>
   
   - Chance to flee = 100% / (2 + `enemy level` - `your level`)
   
@@ -367,7 +367,7 @@ There are *2* special moves available in battle. These actions can also be perfo
 
 - **Changing equipment** ![Body Armour](/assets/img/icons/inventory.gif) allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.
 - **Drinking a potion** ![Potion](/assets/img/icons/potion.gif) restores HP. It requires you to have at least one vial of life fluid.
-  <details markdown=1><summary class="bar-descriptor"><em>How much HP?</em></summary>
+  <details markdown=1><summary class="small-text"><em>How much HP?</em></summary>
   
   - HP restored = 50 + 10 × √`your level` - 10
   
