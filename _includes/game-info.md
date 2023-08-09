@@ -1,1 +1,1 @@
-{::nomarkdown}<details><summary class="small-text">Game info</summary><span class="game-info">{{ include.text }}</span></details>{:/nomarkdown}
+{::nomarkdown}<details><summary class="small-text">Game info</summary><p class="game-info">{{ include.text }}</p></details>{:/nomarkdown}

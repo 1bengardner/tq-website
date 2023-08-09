@@ -4,9 +4,9 @@
 {%- for armour in sorted-armour %}
   |{::nomarkdown}<span id="{{ armour.NAME | downcase | replace: ' ', '-' }}" class="record-name">{{ armour.NAME }}</span>{:/nomarkdown}
   {%- if armour.NAME contains "Moon Armour" or armour.NAME contains "Ugly Disguise" -%}
-    <br /><span class="small-text"><a href="#legend">Evade encounters</a></span>
+    <br /><span class="small-text"><a href="#evade-encounters">Evade encounters</a></span>
   {%- elsif armour.NAME contains "Hopalong Boots" -%}
-    <br /><span class="small-text"><a href="#legend">Strike first</a></span>
+    <br /><span class="small-text"><a href="#strike-first">Strike first</a></span>
   {%- endif -%}
   <br />![{{ armour.NAME }}](/assets/img/armour/{{ armour.NAME | downcase }}.gif){% include price.md price=armour.PRICE -%}{% include dropped-by.md item-name=armour.NAME -%}
   |{{ armour.REQUIREMENT_VALUE }}|
@@ -22,11 +22,11 @@
 
 ## Notes
 
-**Evade encounters** prevents random encounters while travelling.
+<span id="evade-encounters">**Evade encounters**</span> prevents random encounters while travelling.
 
 - [Moon Armour](#moon-armour)
 - [Ugly Disguise](#ugly-disguise)
 
-**Strike first** causes you to always take your turn first in battle.
+<span id="strike-first">**Strike first**</span> causes you to always take your turn first in battle.
 
 - [Hopalong Boots](#hopalong-boots)

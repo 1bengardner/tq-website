@@ -37,3 +37,13 @@
 .emoji {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
+  }
+}
+:target {
+  animation: slide-in 0.5s;
+}

@@ -129,14 +129,14 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 |Stat|Effect|
 |-|-|
-|Accuracy|Determines chance to hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Accuracy = `weapon's accuracy` + `dexterity` - 10{::nomarkdown}</details>{:/nomarkdown}|
-|Base Damage|Determines how much damage will be done with a [regular attack](#attacking).{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Base damage = [`power`](#power) × [`primary stat`](#primary-stats) / 10{::nomarkdown}</details>{:/nomarkdown}|
+|Accuracy|Determines chance to hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Accuracy = `weapon's accuracy` + `dexterity` - 10{::nomarkdown}</p></details>{:/nomarkdown}|
+|Base Damage|Determines how much damage will be done with a [regular attack](#attacking).{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Base damage = [`power`](#power) × [`primary stat`](#primary-stats) / 10{::nomarkdown}</p></details>{:/nomarkdown}|
 |Average Damage|Determines how much damage will be done with a regular attack, accounting for accuracy, critical chance and critical damage.|
-|Critical Chance|Determines chance to land a critical hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Critical chance = `weapon's critical chance` × (1 + (`dexterity` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
-|Critical Damage|Determines critical hit damage compared to a regular attack.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Critical damage = `weapon's critical damage` × (1 + (`strength` - 10) / 100){::nomarkdown}</details>{:/nomarkdown}|
-|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.{::nomarkdown}<details><summary class="small-text"><em>Flat value?</em></summary>Every point of defence will reduce damage taken by one point.</details>{:/nomarkdown}|
-|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Reduction = `equipment's reduction` + 3 × √(`wisdom` - 10){::nomarkdown}</details>{:/nomarkdown}|
-|Block Chance|Determines chance to nullify an enemy attack against you.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary>{:/nomarkdown}Block chance = `shield's block chance` × (1 + (`dexterity` - 10) / 20){::nomarkdown}</details>{:/nomarkdown}|
+|Critical Chance|Determines chance to land a critical hit.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Critical chance = `weapon's critical chance` × (1 + (`dexterity` - 10) / 100){::nomarkdown}</p></details>{:/nomarkdown}|
+|Critical Damage|Determines critical hit damage compared to a regular attack.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Critical damage = `weapon's critical damage` × (1 + (`strength` - 10) / 100){::nomarkdown}</p></details>{:/nomarkdown}|
+|Defence|Decreases damage taken by a *flat value*. Calculated before reductions.{::nomarkdown}<details><summary class="small-text"><em>Flat value?</em></summary><p>Every point of defence will reduce damage taken by one point.</p></details>{:/nomarkdown}|
+|Reduction|Decreases damage taken by a *percentage*. Calculated after defence.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Reduction = `equipment's reduction` + 3 × √(`wisdom` - 10){::nomarkdown}</p></details>{:/nomarkdown}|
+|Block Chance|Determines chance to nullify an enemy attack against you.{::nomarkdown}<details markdown=1><summary class="small-text"><em>What's the formula?</em></summary><p>{:/nomarkdown}Block chance = `shield's block chance` × (1 + (`dexterity` - 10) / 20){::nomarkdown}</p></details>{:/nomarkdown}|
 
 ---
 
