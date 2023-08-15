@@ -365,7 +365,7 @@ There are *3* basic combat moves always available to you.
 
 There are *2* special moves available in battle. These actions can also be performed outside of battle.
 
-- **Changing equipment** ![Body Armour](/assets/img/icons/inventory.gif) allows you to use a turn to equip a different item from your inventory. You will take an additional turn to recover.
+- **Changing equipment** ![Body Armour](/assets/img/icons/inventory.gif) allows you to use a turn to equip a different item from your inventory.
 - **Drinking a potion** ![Potion](/assets/img/icons/potion.gif) restores HP. It requires you to have at least one vial of life fluid.
   <details markdown=1><summary class="small-text"><em>How much HP?</em></summary>
   
