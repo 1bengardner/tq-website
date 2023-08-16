@@ -18,7 +18,7 @@ Big Mushroom	1000	Multiplies damage by 2.*Attack to consume.
 Jagged Mushroom	1000	Increases crit chance by 25%.*Attack to consume.	
 Thick Mushroom	1000	Multiplies defence by 2.*Attack to consume.	
 Magical Mushroom	1500	Increases all reductions by 25%.*Attack to consume.	
-Macedonian Protector	0	Increases block chance while defending.	While defending, the Macedonian Protector increases block chance by 5%.
+Macedonian Protector	0	Increases block chance while defending.	While defending, the Macedonian Protector increases block chance by 5%. Unlike the flat 25% block chance increase from defending, the Macedonian Protector's block chance is affected by the block chance formula.
 Oracular Orb	0	A magical orb of great energy.	
 Ominous Orb	0	This orb can be fused with its*user to combine potentials.	
 Chasmic Rucksack	15000	You could even fit a Telamon Shield in this.	The Chasmic Rucksack increases your inventory capacity to 16.
@@ -38,3 +38,6 @@ Wizardly Orb	0	Bestows 3% elemental damage reduction.
 Knightly Orb	0	Bestows 3% block chance.	
 Feline Orb	0	Bestows 3% physical damage reduction.	
 Gumball of Power	0	Bestows +3 to all stats.	
+Boulderwort	100	Protects against grounding.*Crumbles after 200 steps.	
+Prickly Pear	100	Protects against burning.*Dries up after 200 steps.	
+Snowdrops	100	Protects against freezing.*Wilts after 200 steps.	

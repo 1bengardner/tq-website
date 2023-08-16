@@ -2,7 +2,7 @@
 |-|-|
 {%- for misc-item in site.data.miscellaneousitemdata -%}
   {%- capture consumable -%}
-    {%- if misc-item.NAME contains "Mushroom" or misc-item.NAME contains "Psilocybin" or misc-item.NAME contains "The good stuff" or misc-item.NAME contains "Leaf" or misc-item.NAME contains "Mint" -%}
+    {%- if misc-item.NAME contains "Mushroom" or misc-item.NAME contains "Psilocybin" or misc-item.NAME contains "The good stuff" or misc-item.NAME contains "Leaf" or misc-item.NAME contains "Mint" or misc-item.NAME contains "Pear" or misc-item.NAME contains "Boulderwort" or misc-item.NAME contains "Snowdrops" -%}
       true
     {%- endif -%}
   {%- endcapture -%}
