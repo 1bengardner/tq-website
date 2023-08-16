@@ -1,6 +1,6 @@
 |Item|Description|
 |-|-|
-{%- for misc-item in site.data.miscellaneousdata -%}
+{%- for misc-item in site.data.miscellaneousitemdata -%}
   {%- capture consumable -%}
     {%- if misc-item.NAME contains "Mushroom" or misc-item.NAME contains "Psilocybin" or misc-item.NAME contains "The good stuff" or misc-item.NAME contains "Leaf" or misc-item.NAME contains "Mint" -%}
       true
