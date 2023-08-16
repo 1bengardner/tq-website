@@ -42,7 +42,7 @@ Stats can be grouped into [vital stats](#vital-stats), [primary stats](#primary-
 
 You gain *XP* from defeating enemies. You gain more XP when the enemies you defeat are closer to your level or above it.
 
-Each time you level up, you gain 20 *HP* and 20 *EP*, and your HP and EP are fully restored.
+Each time you level up, your *HP* and *EP* are fully restored and their maximums increase by 20.
 
 |Stat|Effect
 |-|-|
@@ -338,7 +338,7 @@ Turn order is maintained throughout the battle.
 There are *3* basic combat moves always available to you.
 
 - <span id="attacking">**Attacking** ![Sword](/assets/img/icons/attack.gif)</span> strikes the enemy with your equipped weapon. Also referred to as a *regular attack*.
-- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
+- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by a flat 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
   <details markdown=1 style="margin-bottom: 0.5em;"><summary class="small-text"><em>How much EP?</em></summary>
   
   - EP restored = 5 + ∜`wisdom`<sup>3</sup>
@@ -385,7 +385,7 @@ Party members will join you in battle, taking their turn immediately after you. 
 
 An enemy may attack a party member. If a party member loses all their HP, they will be unable to fight until they rest at their house or an inn.
 
-Party members gain the same amount of XP as you after each battle. When they level up, they will gain 20 HP and allocate 5 stat points to one of their primary stats.
+Party members gain the same amount of XP as you after each battle. When they level up, they will gain 20 max HP and allocate 5 stat points to one of their primary stats.
 
 |Party Member|Chosen Primary Stat|
 |-|-|
