@@ -24,7 +24,7 @@
         [![{{ drop }}: {{ rate }}%](/assets/img/shields/{{ drop | downcase }}.gif)](shields#{{ drop | downcase | replace: " ", "-" }} "{{ drop }}: {{ rate }}%")
       {%- endif -%}
     {%- endfor -%}
-    {%- for misc-item in site.data.miscellaneousdata -%}
+    {%- for misc-item in site.data.miscellaneousitemdata -%}
       {%- if misc-item.NAME == drop -%}
         [![{{ drop }}: {{ rate }}%](/assets/img/miscellaneous/{{ drop | downcase }}.gif)](miscellaneous#{{ drop | downcase | replace: " ", "-" }} "{{ drop }}: {{ rate }}%")
       {%- endif -%}
