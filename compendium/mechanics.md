@@ -169,7 +169,7 @@ There is a special case for *power*. It is a stat found only on weapons and it a
 *Regular attacks* with <span class="compendium-link">[wands](weapons#wands)</span> are peculiar for three reasons:
 
 - An enemy's physical reduction is not applied.
-- Only ⅓ of an enemy's defence is applied.
+- Only ½ of an enemy's defence is applied.
 - The average of an enemy's 3 elemental reductions is applied.
   - If an enemy is immune to an element, that component is treated as 100% reduction in this average.
 
@@ -218,6 +218,16 @@ Most <span class="compendium-link">[skills](skills)</span> require a certain wea
 There are <span class="compendium-link">[three](skills#avalanche)</span> <span class="compendium-link">[special](skills#melting-touch)</span> <span class="compendium-link">[skills](skills#hailstorm)</span> that may be used outside of battle in very specific scenarios.
 
 You may keep up to *4* skills. To get another skill after four, you must relinquish one that you already have.
+
+### Elemental Skills
+
+*Elemental skills* are skills which deal elemental damage.
+
+They have the following properties when used:
+
+- Defence applied is reduced by ½.
+- [Elemental reductions](#elemental-reductions) are applied.
+- There is a chance to inflict an [elemental ailment](#elemental-ailments).
 
 ### Stat-Altering Skills
 
@@ -300,7 +310,7 @@ Unlike other [secondary bonuses](#secondary-stats), elemental reductions do not 
 
 ### Elemental Ailments
 
-Elemental attacks that deal damage (except for Poison Ivy) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
+[Elemental skills](#elemental-skills) have a chance to inflict an ailment upon the target. Ailments are removed after battle.
 
 Elementally-imbued weapons generally do not inflict ailments. However, *lightning weapons* are special: while wielding one, non-elemental attacks have a chance of inflicting paralysis.
 
