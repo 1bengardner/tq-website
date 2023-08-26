@@ -13,8 +13,8 @@ Expunging Lunge	No Defence Damage	{'Spear', 'Sword'}	25	300	Physical	{}	{}	deftl
 Reckless Rack	Reduced Accuracy Damage	{'Melee'}	40	500	Physical	{'cDamage': 10}	{}	recklessly demolishes	Recovering
 Battery Cage	Multi-Hit Damage	{'Melee'}	50	7	Physical	{}	{}	batters	None
 Bladedriver's Barbarity	Miscellaneous	{'Sword'}	30	0	Physical	{'cDamage': 50}	{}	unleashes the savagery of the sword	None
-Pummeler's Precision	Miscellaneous	{'Bludgeon'}	30	0	Physical	{'cRate': 2, 'accuracy': 3}	{}	channels the mastery of the mace	None
-Gashmaster's Grace	Miscellaneous	{'Axe'}	30	0	Physical	{'accuracy': 5, 'cDamage': 25}	{}	embraces the artfulness of the axe	None
+Pummeler's Precision	Miscellaneous	{'Bludgeon'}	30	0	Physical	{'cRate': 3, 'accuracy': 3}	{}	channels the mastery of the mace	None
+Gashmaster's Grace	Miscellaneous	{'Axe'}	30	0	Physical	{'accuracy': 5, 'cDamage': 30}	{}	embraces the artfulness of the axe	None
 Impaler's Impulse	Miscellaneous	{'Spear'}	30	0	Physical	{'cRate': 2, 'cDamage': 25}	{}	harnesses the swiftness of the spear	None
 Power Lob	Reduced Accuracy Damage	{'Bow'}	5	250	Physical	{}	{}	launches an arrow, landing on	None
 Rock Shot	Damage	{'Bow'}	5	80	Earth	{}	{}	fires a rock at	None
@@ -38,7 +38,7 @@ Hot Coals	Multi-Hit Damage	{'Wand'}	30	4	Fire	{}	{'hp': -5}	conjures a hot coal 
 Poison Cloud	Miscellaneous	{'Wand'}	30	0	Poison	{}	{}	casts Poison Cloud	None
 Melting Touch	Damage	{'Wand'}	30	300	Fire	{}	{'defence': -15}	casts Melting Touch on	None
 Floodtide	Damage	{'Wand'}	35	400	Water	{}	{}	casts Floodtide on	None
-Mist	Miscellaneous	{'Wand'}	35	0	Physical	{}	{'waterReduction': -20, 'accuracy': -5}	conjures a veil of mist	None
+Mist	Miscellaneous	{'Wand'}	35	0	Physical	{}	{'waterReduction': -5, 'accuracy': -5}	conjures a veil of mist	None
 Scorch	Damage	{'Wand'}	35	350	Fire	{}	{'hp': -25}	scorches	None
 Duststorm	Multi-Hit Damage	{'Wand'}	40	5	Earth	{}	{'accuracy': -1}	casts a gust of dust at	None
 Hailstorm	Multi-Hit Damage	{'Wand'}	45	6	Ice	{}	{'bRate': -1}	casts a shard of hail at	None
@@ -60,4 +60,4 @@ Recover	Heal	{'All'}	15	25	Physical	{}	{}	recovers	None
 Restore	Percent Heal	{'All'}	50	25	Physical	{}	{}	restores	Recovering
 Reinvigorate	Percent Heal	{'All'}	125	50	Physical	{}	{}	reinvigorates	Recovering
 Revitalize	Percent Heal	{'All'}	250	100	Physical	{}	{}	revitalizes	Recovering
-Inner Zen	Miscellaneous	{'All'}	25	0	Physical	{'accuracy': 4, 'cRate': 2, 'cDamage': 20}	{}	focuses deeply	None
+Inner Zen	Miscellaneous	{'All'}	30	0	Physical	{'accuracy': 2, 'cRate': 1, 'cDamage': 20}	{}	focuses deeply	None
