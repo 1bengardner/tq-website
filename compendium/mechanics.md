@@ -318,10 +318,10 @@ Elementally-imbued weapons generally do not inflict ailments. However, *lightnin
 |-|-|-|
 |Earth|30% chance to be *grounded*|Lose one turn.|
 |Lightning|20% chance to be *paralyzed*|Lose turns until recovery. 50% chance of recovery each turn.|
-|Poison|100% chance to be *poisoned*|Take damage equal to approximately 2% of your max HP each turn.|
+|Poison|100% chance to be *poisoned*|Take damage equal to approximately 2% of your max HP each turn.{::nomarkdown}<details markdown=1><summary class="small-text"><em>Special case for rare enemies</em></summary><p>{:/nomarkdown}<span id="poison-on-rare-enemies">Poisoned [*rare enemies*](#rare-enemies) have a 20% chance to be cured each turn and cannot take poison damage if their HP is below 10% of their max HP</span>{::nomarkdown}</p></details>{:/nomarkdown}|
 |Water|50% chance to *drown* when you lose 50% max HP from the attack|Die immediately.|
 |Ice|15% chance to *freeze*|Lose turns until recovery. 25% chance of recovery each turn.|
-|Fire|25% chance to *ignite*|Take damage equal to approximately 25% of damage dealt by the original igniting attack each turn until recovery. 25% chance of recovery each turn.|
+|Fire|25% chance to *ignite*|Take damage equal to approximately 25% of damage dealt by the last igniting attack each turn until recovery. 25% chance of recovery each turn.{::nomarkdown}<details markdown=1><summary class="small-text"><em>Ignition, Transmission, Backfire, Afterburn</em></summary><p>{:/nomarkdown}If you ignite the enemy while you are on fire, your attack is considered the last igniting attack and you will take 25% of its damage instead of the attack that ignited you. The inverse also applies.{::nomarkdown}</p></details>{:/nomarkdown}|
 |Petrification|100% chance to be *petrified*|Lose turns until recovery. 25% chance of recovery each turn.|
 
 #### Additional Notes
@@ -384,6 +384,12 @@ There are *2* special moves available in battle. These actions can also be perfo
   </details>
   
 In addition to the five moves mentioned, you may use any of your [skills](#skills) for which you meet the requirements.
+
+### Enemy Peculiarities
+
+- Certain enemies cannot be fled from. If you attempt to flee from an unfleeable enemy, you will see text "<span class="game-text">There's nowhere to run.</span>"
+- Enemies that are "living" can be poisoned. These are enemies that bear blood and drop potions. Bloodless enemies are immune to poison.
+- <span id="rare-enemies">An enemy with a border that is not brown is considered "rare." [Poison has a weaker effect on rare enemies.](#poison-on-rare-enemies)</span>
 
 ---
 

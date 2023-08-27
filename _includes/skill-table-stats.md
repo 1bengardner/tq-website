@@ -23,5 +23,5 @@
     {{ effect | split: ": " | last }}        
   {%- endcapture -%}
   {%- assign value = value | round -%}
-  {::nomarkdown}<li>{% if value >= 0 %}+{% endif %}{{ value }}{{ name | remove: "SPACER" }}</li>{:/nomarkdown}
+  {::nomarkdown}<li>{% if value >= 0 %}+{% endif %}{{ value }}{{ name | remove: "SPACER" }}{%- if value < 0 and abbr == "accuracy" -%}<a href="#legend">*</a>{%- endif -%}</li>{:/nomarkdown}
 {%- endfor -%}
