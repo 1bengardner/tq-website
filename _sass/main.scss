@@ -2,6 +2,17 @@
   z-index: 1;
 }
 
+@media (max-width: 819px) {
+  .large-screens-only {
+    display: none;
+  }
+}
+@media (min-width: 820px) {
+  .small-screens-only {
+    display: none;
+  }
+}
+
 .site-header.decorative-background {
   background: url("/assets/img/background-light.jpg");
   background-repeat: no-repeat;
