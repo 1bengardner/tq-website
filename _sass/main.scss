@@ -4,12 +4,12 @@
 
 @media (max-width: 819px) {
   .large-screens-only {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 820px) {
   .small-screens-only {
-    display: none;
+    display: none !important;
   }
 }
 
