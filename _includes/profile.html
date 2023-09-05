@@ -1,1 +1,4 @@
-<img class="character" src="/assets/img/other/{{ include.character | downcase }}.gif" />
+{%- assign path = "/assets/img/other/" | append: include.character | downcase | append: ".gif" -%}
+<img class="character"
+{% include independently-sized-image-properties.html path=path %}
+/>
