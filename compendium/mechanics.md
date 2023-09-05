@@ -23,7 +23,7 @@ permalink: "/compendium/guide"
       <a href="#battle">Battle</a>
     </li>
     <li>
-      <a href="#party-members">Party Members</a>
+      <a href="#allies">Allies</a>
     </li>
   </ul>
 </div>
@@ -393,17 +393,17 @@ In addition to the five moves mentioned, you may use any of your [skills](#skill
 
 ---
 
-## Party Members
+## Allies
 
 You will encounter fighters who want to accompany you on your quest.
 
-Party members will join you in battle, taking their turn immediately after you. They have a set of skills and equipment that remains with them throughout your journey.
+Allies will join you in battle, taking their turn immediately after you. They have a set of skills and equipment that remains with them throughout your journey.
 
-An enemy may attack a party member. If a party member loses all their HP, they will be unable to fight until they rest at their house or an inn.
+An enemy may attack an ally. If an ally loses all their HP, they will be unable to fight until they rest at their house or an inn.
 
-Party members gain the same amount of XP as you after each battle. When they level up, they will gain 20 max HP and allocate 5 stat points to one of their primary stats.
+Allies gain the same amount of XP as you after each battle. When they level up, they will gain 20 max HP and allocate 5 stat points to one of their primary stats.
 
-|Party Member|Chosen Primary Stat|
+|Ally|Chosen Primary Stat|
 |-|-|
 |Dragan|Dexterity|
 |Qendresa|Strength|
