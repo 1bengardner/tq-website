@@ -1,0 +1,49 @@
+<label for="link-selector">Search the compendium: </label>
+<input list="compendium-links" id="link-selector" placeholder="Click or type here..." autofocus />
+<datalist id="compendium-links">
+{%- for weapon in site.data.weapondata -%}
+  <option value="⚔ {{ weapon.NAME }}"></option>
+{%- endfor -%}
+{%- for armour in site.data.armourdata -%}
+  <option value="☥ {{ armour.NAME }}"></option>
+{%- endfor -%}
+{%- for shield in site.data.shielddata -%}
+  <option value="☩ {{ shield.NAME }}"></option>
+{%- endfor -%}
+{%- for misc-item in site.data.miscellaneousitemdata -%}
+  <option value="☄ {{ misc-item.NAME }}"></option>
+{%- endfor -%}
+{%- for skill in site.data.skilldata -%}
+  <option value="✨ {{ skill.NAME }}"></option>
+{%- endfor -%}
+{%- for enemy in site.data.enemydata -%}
+  {%- if enemy.IDENTIFIER contains "Unfleeable" -%}
+    {%- continue -%}
+  {%- endif -%}
+  <option value="☠ {{ enemy.IDENTIFIER }}">{{ enemy.NAME }}</option>
+{%- endfor -%}
+</datalist>
+
+<script type="text/javascript">
+  emojiToSectionName = {
+    "⚔": "weapons#",
+    "☥": "armour#",
+    "☩": "shields#",
+    "☄": "miscellaneous#",
+    "✨": "skills#",
+    "☠": "enemies#",
+  }
+
+  const dropdown = document.getElementById('link-selector');
+  let madeSelection = false;
+
+  dropdown.addEventListener('keydown', (e) => {
+    madeSelection = e.key === undefined || e.key === "Enter";
+  });
+  dropdown.addEventListener('input', (e) => {
+    if (madeSelection) {
+      console.log(e.target.text);
+      window.location.href = "/compendium/" + emojiToSectionName[e.target.value.split(' ')[0]] + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replaceAll(' ', '-');
+    }
+  });
+</script>

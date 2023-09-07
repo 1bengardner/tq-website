@@ -8,6 +8,27 @@ details[open] > :not(summary) {
   animation: expand 0.3s;
 }
 
+.search-button {
+  cursor: pointer;
+}
+#header-search {
+  animation: expand 0.3s;
+  display: none;
+  line-height: normal;
+  margin-bottom: 1em;
+}
+#collapsible-search {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 16px;
+  }
+  #collapsible-search {
+    display: inline;
+  }
+}
+
 .subsite-title {
   text-transform: uppercase;
   font-size: .6em;
