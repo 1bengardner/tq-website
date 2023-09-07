@@ -26,7 +26,7 @@
             {%- endif -%}
           {%- endfor -%}
           {%- unless page.title == "Toshe's Quest Compendium" -%}
-          <search id="collapsible-search"><button title="Search" class="search-button" onclick="document.getElementById('header-search').style.display = document.getElementById('header-search').style.display == 'block' ? 'none' : 'block';">🔎</button>
+          <search id="collapsible-search"><button title="Search" class="search-button" onclick="document.getElementById('header-search').style.display = document.getElementById('header-search').style.display == 'block' ? 'none' : 'block'; document.getElementById('link-selector').focus();">🔎</button>
             <div id="header-search">
               {%- include quick-search.html -%}
             </div>
