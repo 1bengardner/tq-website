@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Meet the Cast!"
+permalink: "meet-the-cast"
 ---
 
 ## Toshe

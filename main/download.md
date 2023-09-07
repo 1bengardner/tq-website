@@ -1,7 +1,7 @@
 ---
-permalink: download
 layout: page
 title: Download
+permalink: download
 ---
 
 <iframe class="small-screens-only" frameborder="0" src="https://itch.io/embed/2240192?bg_color=fdf6e3&amp;fg_color=000000&amp;link_color=24828b&amp;border_color=c5bba3" width="208" height="167"><a href="https://yaouw.itch.io/toshes-quest-ii">Toshe's Quest II by yaouw</a></iframe>

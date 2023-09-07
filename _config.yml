@@ -6,8 +6,8 @@ remote_theme: jekyll/minima
 minima:
   skin: solarized
 header_pages:
-  - download.md
-  - how-to-play.md
+  - main/download.md
+  - main/how-to-play.md
   - compendium/welcome.html
 author:
   name: Ben Gardner
