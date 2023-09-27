@@ -8,6 +8,6 @@ permalink: "/compendium/world-map"
   🚧 This page is a work in progress.
 </strong>
 
-The map has not been drawn yet. Here's an ASCII rendition of the world in the meantime.
+Somebody drew this semi-accurate doodle of the world, which will stand in as a placeholder until I can get my hands on a real map.
 
-[![World Map of Toshe's Quest](/assets/img/ascii-map.png)](/assets/img/ascii-map.png)
+[![World Map of Toshe's Quest](https://drive.google.com/uc?id=1moA4p-gISVOc98TSaGNK1exMelJ2jvgO)](https://drive.google.com/uc?id=1moA4p-gISVOc98TSaGNK1exMelJ2jvgO)
