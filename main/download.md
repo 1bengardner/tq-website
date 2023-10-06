@@ -12,7 +12,7 @@ permalink: download
 
 Available on [GitHub](https://github.com/1bengardner/toshes-quest-ii).
 
-### ![](assets/img/icons/up.gif) Saved Game Converter
+### ![](assets/img/convert.png) Saved Game Converter
 
 Returning from an older version of Toshe's Quest II? Convert saved games from v2 and earlier to be compatible with the latest version of Toshe's Quest II. [Click to download the converter](https://github.com/1bengardner/toshes-quest-ii-converter/releases/download/v1.0.0/Converter.exe).
 
