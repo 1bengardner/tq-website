@@ -2,12 +2,12 @@
   z-index: 1;
 }
 
-@media (max-width: 859px) {
+@media (max-width: 819px) {
   .large-screens-only {
     display: none !important;
   }
 }
-@media (min-width: 860px) {
+@media (min-width: 820px) {
   .small-screens-only {
     display: none !important;
   }
