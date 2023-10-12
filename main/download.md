@@ -14,13 +14,15 @@ Available on [GitHub](https://github.com/1bengardner/toshes-quest-ii).
 
 ---
 
-### ![](assets/img/hammer.png) Saved Game Editor
-
-Change your stats and items for fun and profit. [Click here to download the zip](https://github.com/1bengardner/toshes-quest-ii-editor/releases/download/v1.0.0/editor.zip). Extract contents and run.
+<span class="callout"><span class="emoji">ℹ️</span> The following applications must run in the same folder as Toshe's Quest II.</span>
 
 ### ![](assets/img/convert.png) Saved Game Converter
 
 Returning from an older version of Toshe's Quest II? Convert saved games from v2 and earlier to be compatible with the latest version of Toshe's Quest II. [Click to download the converter](https://github.com/1bengardner/toshes-quest-ii-converter/releases/download/v1.0.0/Converter.exe).
+
+### ![](assets/img/hammer.png) Saved Game Editor
+
+Change your stats and items for fun and profit. [Click to download the editor](https://github.com/1bengardner/toshes-quest-ii-editor/releases/download/v1.0.1-standalone/Editor.exe).
 
 <script type="text/javascript">
   const widget = document.getElementById("itchio-widget");
