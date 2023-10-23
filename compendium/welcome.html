@@ -6,9 +6,14 @@ permalink: "/compendium"
 
 {%- include quick-search.html -%}
 
+<span style="float: right;">
+  <img {% include independently-sized-image-properties.html path="/assets/img/other/marija.gif" %} alt="Marija" style="border-radius: 100%; margin-top: 30px;" />
+</span>
+
 <h2>
   Sections
 </h2>
+
 {%- assign relative_page_paths = layout.header_pages -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 {%- if titles_size > 0 -%}
