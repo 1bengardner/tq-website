@@ -8,7 +8,15 @@ permalink: "how-to-play"
   <img {% include independently-sized-image-properties.html path="/assets/img/other/turtle.gif" %} alt="" style="border-radius: 100%;" />
 </span>
 
+## Basic
+
 - [Tutorial](tutorial)
 - [Shortcuts](shortcuts)
 - [Characters](meet-the-cast)
-- [Game Download](download)
+- [Classes](classes)
+
+## Advanced
+
+- [Detailed Game Guide](/compendium/guide)
+- [Forge Guide](/compendium/forge)
+- [Specialization Guide](/compendium/specializations)
