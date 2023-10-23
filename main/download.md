@@ -12,7 +12,7 @@ permalink: download
 
 Available on [GitHub](https://github.com/1bengardner/toshes-quest-ii).
 
----
+## Extras
 
 <span class="callout"><span class="emoji">ℹ️</span> The following applications must run in the same folder as Toshe's Quest II.</span>
 
