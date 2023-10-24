@@ -4,9 +4,21 @@ title: "Specializations"
 permalink: "/compendium/specializations"
 ---
 
+<span style="float: right;">
+  <img {% include independently-sized-image-properties.html path="/assets/img/other/altar.gif" %} alt="Hidden Passage altar" style="border-radius: 100%; margin-left: 1em; margin-bottom: 1em;" />
+</span>
+
+- [Warrior Specializations](#warrior-specializations)
+- [Archer Specializations](#archer-specializations)
+- [Mage Specializations](#mage-specializations)
+- [Ranger Specializations](#ranger-specializations)
+- [Monk Specializations](#monk-specializations)
+- [Druid Specializations](#druid-specializations)
+- [Omnibus Specializations](#omnibus-specializations)
+
 ## Overview
 
-After defeating [*Riplin*](/compendium/enemies#riplin) and absorbing the power of the [*Ominous Orb*](/compendium/miscellaneous#ominous-orb) in the Hidden Passage altar, you may take on one of four specializations. The four specializations that you qualify for depend on your [class](/classes).
+After defeating [*Riplin*](/compendium/enemies#riplin) and absorbing the power of the [*Ominous Orb*](/compendium/miscellaneous#ominous-orb) in the Hidden Passage altar, you may take on one of four specializations. The four specializations for which you qualify depend on your [class](/classes).
 
 ### Perks and Bonuses
 
