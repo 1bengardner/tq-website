@@ -22,11 +22,11 @@ Macedonian Protector	0	Increases block chance while defending.	While defending, 
 Oracular Orb	0	A magical orb of great energy.	
 Ominous Orb	0	This orb can be fused with its*user to combine potentials.	
 Chasmic Rucksack	15000	You could even fit a Telamon Shield in this.	The Chasmic Rucksack increases your inventory capacity to 16.
-Scintillous Ring	1	Absorbs XP and increases luck while worn.*Resets when unequipped.	
+Scintillous Ring	1	Absorbs XP and increases luck while worn.*Resets when unequipped.	Your chance of getting a prefixed equipment drop increases by 1% for every ring level.
 Golden Horn	1	Changes forge success chance to 95%.*One-time use.	
 Green Horn	1	Triples forge success chance.*One-time use.	
 Purple Horn	1	Raises forge success chance by 1000%.*One-time use.	
-Olympian Ointment	200	A serum that can be applied to rock formations*...with varying results.	
+Olympian Ointment	200	A serum that can be applied to rock formations*...with varying results.	Olympian Ointment can be applied to the entrance of the Lair of the Magi, the Golem Cavern, Yaouw Volcano, The Stone of Macedonia and the foot of the desert-peninsula tunnel.
 Psilocybin	3000	May alter your experience.	Psilocybin causes you to gain 100% to 1000% XP each battle. There is a 9% chance that you will gain no XP and the Psilocybin will be consumed.
 The good stuff!	6000	Doubles your drop chance.*May also kill you.	The good stuff! has a 5% chance to kill you.
 Sigil of Ascension	1	Grants the bearer 5 rank points for every kill.	
@@ -35,7 +35,7 @@ Bulbous Orb	0	Bestows 10% earth damage reduction.
 Fiery Orb	0	Bestows 10% fire damage reduction.	
 Platinum Ball	100000	This is worth a lot of money.	
 Wizardly Orb	0	Bestows 5% elemental damage reduction.	
-Knightly Orb	0	Bestows 5% block chance.	
+Knightly Orb	0	Bestows 3% block chance.	
 Feline Orb	0	Bestows 5% physical damage reduction.	
 Gumball of Power	0	Bestows +5 to all stats.	
 Boulderwort	100	Protects against grounding.*Crumbles after 200 steps.	
