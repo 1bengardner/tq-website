@@ -348,7 +348,7 @@ Turn order is maintained throughout the battle.
 There are *3* basic combat moves always available to you.
 
 - <span id="attacking">**Attacking** ![Sword](/assets/img/icons/attack.gif)</span> strikes the enemy with your equipped weapon. Also referred to as a *regular attack*.
-- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by a flat 25% and restores EP. If the next attack is successfully blocked, you gain an EP boost.
+- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by a flat 25% and restores EP. If the next attack is successfully blocked, you get an adrenaline rush and an EP boost.
   <details markdown=1 style="margin-bottom: 0.5em;"><summary class="small-text"><em>How much EP?</em></summary>
   
   - EP restored = 5 + ∜`wisdom`<sup>3</sup>
