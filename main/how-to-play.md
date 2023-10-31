@@ -17,6 +17,4 @@ permalink: "how-to-play"
 
 ## Advanced
 
-- [Detailed Game Guide](/compendium/guide)
-- [Forge Guide](/compendium/forge)
-- [Specialization Guide](/compendium/specializations)
+- [Detailed Game Guides in the Compendium](/compendium/guides)
