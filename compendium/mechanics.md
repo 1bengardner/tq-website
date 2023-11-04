@@ -32,6 +32,8 @@ permalink: "/compendium/guide"
 
 ## Stats
 
+![Game screen stat locations](/assets/img/guide/stats.png)
+
 Stats can be grouped into [vital stats](#vital-stats), [primary stats](#primary-stats) and [secondary stats](#secondary-stats).
 
 - **Vital stats** are the most important to watch and may fluctuate frequently.
@@ -142,6 +144,8 @@ These stats are derived from your primary stats and the equipment you wield (and
 
 ## Items
 
+![Game screen stat locations](/assets/img/guide/items.png)
+
 Items serve a variety of purposes from boosting stats to providing access to new locations. Items can be grouped into [equipment](#equipment) and [miscellaneous items](#miscellaneous-items).
 
 You may carry up to *9* items, unless you have the <span class="compendium-link">[Chasmic Rucksack](miscellaneous#chasmic-rucksack)</span>, which allows you to carry up to *16*.
@@ -212,6 +216,8 @@ Some miscellaneous items present passive bonuses that benefit you as long as tha
 ---
 
 ## Skills
+
+![Game screen stat locations](/assets/img/guide/skills.png)
 
 Most <span class="compendium-link">[skills](skills)</span> require a certain weapon type to be equipped in order to use them in [battle](#battle). Skills consume EP when used.
 
@@ -332,6 +338,8 @@ Elementally-imbued weapons generally do not inflict ailments. However, *lightnin
 ---
 
 ## Battle
+
+![Game screen stat locations](/assets/img/guide/battle.png)
 
 Battles may occur randomly while travelling, or as a result of events that happen.
 
