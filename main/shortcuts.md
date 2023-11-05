@@ -16,6 +16,7 @@ permalink: "shortcuts"
 |![X](/assets/img/icons/cancel.gif "Cancel")|X|
 |![Potion](/assets/img/icons/potion.gif "Drink a vial of life fluid")|P|
 |<span class="game-text" title="Toggle Mission Log">Mission Log ![Log Book](/assets/img/icons/mission log.gif)</span>|Q|
+|![Map](/assets/img/icons/map.gif "Open the world map")/<span class="game-text" title="Close the world map">Return</span>|M|
 
 ## Overworld
 
