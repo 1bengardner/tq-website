@@ -181,6 +181,8 @@ There is a special case for *power*. It is a stat found only on weapons and it a
 
 Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This is a regular piece of equipment with an additional enhancement.
 
+<details markdown=1><summary><em>What are the different modifiers?</em></summary>
+
 |Modifier Name|Stat Enhanced|Enhancement Amount|
 |-|-|-|
 |Exotic|Sell price|+100% to +300%|
@@ -198,6 +200,8 @@ Sometimes an enemy will drop a piece of equipment with a modifier (prefix). This
 |Molten|Fire reduction|+4% to +8%|
 |Robust|Defence|+4 to +8|
 |Massive|Block chance|+2% to +4%|
+
+</details>
 
 ### Miscellaneous Items
 
