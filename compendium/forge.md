@@ -5,7 +5,7 @@ permalink: "/compendium/forge"
 ---
 
 <span style="float: right;">
-  <img {% include independently-sized-image-properties.html path="/assets/img/other/forge.gif" %} alt="Forge of Hephaestus" style="border-radius: 100%; margin-left: 1em; margin-bottom: 1em;" />
+  <img class="decorative-circle" {% include independently-sized-image-properties.html path="/assets/img/other/forge.gif" %} alt="Forge of Hephaestus" style="margin-left: 1em; margin-bottom: 1em;" />
 </span>
 
 ## Overview

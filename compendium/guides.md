@@ -5,7 +5,7 @@ permalink: "/compendium/guides"
 ---
 
 <span style="float: right;">
-  <img {% include independently-sized-image-properties.html path="/assets/img/other/medea.gif" %} alt="Medea" style="border-radius: 100%;" />
+  <img class="decorative-circle" {% include independently-sized-image-properties.html path="/assets/img/other/medea.gif" %} alt="Medea" />
 </span>
 
 - [The Game](guide)

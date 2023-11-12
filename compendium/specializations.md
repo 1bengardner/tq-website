@@ -5,7 +5,7 @@ permalink: "/compendium/specializations"
 ---
 
 <span style="float: right;">
-  <img {% include independently-sized-image-properties.html path="/assets/img/other/altar.gif" %} alt="Hidden Passage altar" style="border-radius: 100%; margin-left: 1em; margin-bottom: 1em;" />
+  <img class="decorative-circle" {% include independently-sized-image-properties.html path="/assets/img/other/altar.gif" %} alt="Hidden Passage altar" style="margin-left: 1em; margin-bottom: 1em;" />
 </span>
 
 - [Warrior Specializations](#warrior-specializations)
