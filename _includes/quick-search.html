@@ -25,25 +25,34 @@
 </datalist>
 
 <script type="text/javascript">
-  emojiToSectionName = {
-    "⚔": "weapons#",
-    "☥": "armour#",
-    "☩": "shields#",
-    "☄": "miscellaneous#",
-    "✨": "skills#",
-    "☠": "enemies#",
+  function tryToGoToPage(searchText) {
+    emojiToSectionName = {
+      "⚔": "weapons#",
+      "☥": "armour#",
+      "☩": "shields#",
+      "☄": "miscellaneous#",
+      "✨": "skills#",
+      "☠": "enemies#",
+    }
+    if (searchText.split(' ')[0] in emojiToSectionName) {
+      window.location.href = "/compendium/" + emojiToSectionName[searchText.split(' ')[0]] + searchText.split(' ').slice(1).join(' ').toLowerCase().replaceAll(' ', '-');
+    }
   }
 
   const dropdown = document.getElementById('link-selector');
   let madeSelection = false;
-
+  // (Fires before `input`).
   dropdown.addEventListener('keydown', (e) => {
     madeSelection = e.key === undefined || e.key === "Enter";
+    // Handle a typed entry.
+    if (madeSelection) {
+      tryToGoToPage(e.target.value);
+    }
   });
   dropdown.addEventListener('input', (e) => {
+    // Handle a clicked selection (does not work in Firefox).
     if (madeSelection) {
-      console.log(e.target.text);
-      window.location.href = "/compendium/" + emojiToSectionName[e.target.value.split(' ')[0]] + e.target.value.split(' ').slice(1).join(' ').toLowerCase().replaceAll(' ', '-');
+      tryToGoToPage(e.target.value);
     }
   });
 </script>
