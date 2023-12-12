@@ -7,4 +7,4 @@ permalink: "/"
   ❓ <a href="about">What is Toshe's Quest?</a>
 </p>
 
-# News
+<h1 style="overflow-wrap: normal;">News</h1>
