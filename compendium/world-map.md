@@ -1,6 +1,6 @@
 ---
 layout: compendium-page
-title: "World Map"
+title: "Map of the World"
 permalink: "/compendium/world-map"
 ---
 
