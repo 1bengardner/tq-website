@@ -119,11 +119,11 @@ Each of the three primary stats increases your damage dealt with one or more wea
 
 A stat needs to be high enough in order to wield a particular piece of [equipment](#equipment).
 
-|Stat|Weapons Empowered|Secondary Bonuses|
-|-|-|-|
-|Strength|Mace, sword, axe, spear|Critical damage|
-|Dexterity|Bow|Accuracy, critical chance, block chance|
-|Wisdom|Wand|Elemental reduction|
+|Stat|Weapons Empowered|Secondary Bonuses|Additional Benefits|
+|-|-|-|-|
+|Strength|Mace, sword, axe, spear|Critical damage|Can equip a wider variety of [armour and shields](#equipment).|
+|Dexterity|Bow|Accuracy, critical chance, block chance|Gain access to more <span class="internal-link">[nymph nodes](nymph-nodes)</span>.|
+|Wisdom|Wand|Elemental reduction|Restore more EP when you [defend](#defending).|
 
 ### Secondary Stats
 
@@ -360,7 +360,7 @@ Turn order is maintained throughout the battle.
 There are *3* basic combat moves always available to you.
 
 - <span id="attacking">**Attacking** ![Sword](/assets/img/icons/attack.gif)</span> strikes the enemy with your equipped weapon. Also referred to as a *regular attack*.
-- **Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by a flat 25% and restores EP. If the next attack is successfully blocked, you get an adrenaline rush and an EP boost.
+- <span id="defending">**Defending** ![Shield](/assets/img/icons/defend.gif) increases your chance to block the next attack by a flat 25% and restores EP. If the next attack is successfully blocked, you get an adrenaline rush and an EP boost.
   <details markdown=1 style="margin-bottom: 0.5em;"><summary class="small-text"><em>How much EP?</em></summary>
   
   - EP restored = 5 + ∜`wisdom`<sup>3</sup>
