@@ -106,13 +106,13 @@ li.opponent-stat-changes {
   margin-left: -0.5em;
 }
 
-.compendium-link:hover::after {
+.compendium-link > a::after {
   content: '📖';
   font-size: small;
   margin-left: 0.125em;
 }
 
-.internal-link:hover::after {
+.internal-link > a::after {
   content: '🔗';
   font-size: small;
   margin-left: 0.125em;

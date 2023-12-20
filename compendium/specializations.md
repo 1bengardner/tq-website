@@ -18,7 +18,7 @@ permalink: "/compendium/specializations"
 
 ## Overview
 
-After defeating [*Riplin*](/compendium/enemies#riplin) and absorbing the power of the [*Ominous Orb*](/compendium/miscellaneous#ominous-orb) in the Hidden Passage altar, you may take on one of four specializations. The four specializations for which you qualify depend on your [class](/classes).
+After defeating <span class="compendium-link">[*Riplin*](/compendium/enemies#riplin)</span> and absorbing the power of the <span class="compendium-link">[*Ominous Orb*](/compendium/miscellaneous#ominous-orb)</span> in the Hidden Passage altar, you may take on one of four specializations. The four specializations for which you qualify depend on your <span class="internal-link">[class](/classes)</span>.
 
 ### Perks and Bonuses
 

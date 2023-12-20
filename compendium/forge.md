@@ -71,7 +71,7 @@ If you successfully upgrade a piece of equipment at the forge, the sacrifices wi
 
 ### Modifiers
 
-Sacrificed equipment with a [modifier prefix](guide#modified-equipment) in its name will provide an additional enhancement based on prefix name, but only if it's the same kind of equipment as forged.
+Sacrificed equipment with a <span class="compendium-link">[modifier prefix](guide#modified-equipment)</span> in its name will provide an additional enhancement based on prefix name, but only if it's the same kind of equipment as forged.
 
 ## Forms
 
@@ -92,12 +92,12 @@ After each forge attempt, you will have completed an ascent of Mount Olympus. Yo
 |Ascensions|Reward|
 |-|-|
 |10|Legendary portrait border|
-|20|[Ranine Orb](/compendium/miscellaneous#ranine-orb)|
-|30|[Bulbous Orb](/compendium/miscellaneous#bulbous-orb)|
-|40|[Fiery Orb](/compendium/miscellaneous#fiery-orb)|
-|50|[Platinum Ball](/compendium/miscellaneous#platinum-ball)|
-|60|[Wizardly Orb](/compendium/miscellaneous#wizardly-orb)|
-|70|[Knightly Orb](/compendium/miscellaneous#knightly-orb)|
-|80|[Feline Orb](/compendium/miscellaneous#feline-orb)|
-|90|[Gumball of Power](/compendium/miscellaneous#gumball-of-power)|
-|100|[Purple Horn](/compendium/miscellaneous#purple-horn)|
+|20|<span class="compendium-link">[Ranine Orb](/compendium/miscellaneous#ranine-orb)</span>|
+|30|<span class="compendium-link">[Bulbous Orb](/compendium/miscellaneous#bulbous-orb)</span>|
+|40|<span class="compendium-link">[Fiery Orb](/compendium/miscellaneous#fiery-orb)</span>|
+|50|<span class="compendium-link">[Platinum Ball](/compendium/miscellaneous#platinum-ball)</span>|
+|60|<span class="compendium-link">[Wizardly Orb](/compendium/miscellaneous#wizardly-orb)</span>|
+|70|<span class="compendium-link">[Knightly Orb](/compendium/miscellaneous#knightly-orb)</span>|
+|80|<span class="compendium-link">[Feline Orb](/compendium/miscellaneous#feline-orb)</span>|
+|90|<span class="compendium-link">[Gumball of Power](/compendium/miscellaneous#gumball-of-power)</span>|
+|100|<span class="compendium-link">[Purple Horn](/compendium/miscellaneous#purple-horn)</span>|
