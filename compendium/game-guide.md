@@ -122,7 +122,7 @@ A stat needs to be high enough in order to wield a particular piece of [equipmen
 |Stat|Weapons Empowered|Secondary Bonuses|Additional Benefits|
 |-|-|-|-|
 |Strength|Mace, sword, axe, spear|Critical damage|Can equip a wider variety of [armour and shields](#equipment).|
-|Dexterity|Bow|Accuracy, critical chance, block chance|Gain access to more <span class="internal-link">[nymph nodes](nymph-nodes)</span>.|
+|Dexterity|Bow|Accuracy, critical chance, block chance|Gain access to more <span class="compendium-link">[nymph-nodes](nymph-nodes)</span>.|
 |Wisdom|Wand|Elemental reduction|Restore more EP when you [defend](#defending).|
 
 ### Secondary Stats
