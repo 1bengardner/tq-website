@@ -17,4 +17,4 @@ permalink: "how-to-play"
 
 ## Advanced
 
-- [Detailed Game Guides in the Compendium](/compendium/guides)
+- [The Compendium: Guides](/compendium/guides)

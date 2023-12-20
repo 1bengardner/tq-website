@@ -11,3 +11,9 @@ permalink: "/compendium/guides"
 - [The Game](guide)
 - [The Forge](forge)
 - [Specializations](specializations)
+
+## Miscellaneous Pages
+
+- [Nymph-Nodes](nymph-nodes)
+- <span class="internal-link">[Shortcuts](/shortcuts)</span>
+- <span class="internal-link">[Classes](/classes)</span>
