@@ -36,7 +36,7 @@
   {% unless requirement == weapon.REQUIREMENT_TYPE -%}
     {% continue %}
   {%- endunless %}
-  |{::nomarkdown}<span id="{{ weapon.NAME | downcase | replace: ' ', '-' }}" class="record-name{% if weapon.ELEMENT != "Physical" %}{{ weapon.ELEMENT | downcase | prepend: " " }}{% endif %}">{{ weapon.NAME }}</span></span>{:/nomarkdown}{%- if include.type == "Warrior" -%}<br /><span class="small-text">{{ weapon.CATEGORY }}</span>{%- endif -%}<br />![{{ weapon.NAME }}](/assets/img/weapons/{{ weapon.NAME | downcase }}.gif){% include price.md price=weapon.PRICE %}{% include dropped-by.md item-name=weapon.NAME -%}
+  |{::nomarkdown}<span id="{{ weapon.NAME | downcase | replace: ' ', '-' }}" class="record-name{% if weapon.ELEMENT != "Physical" %}{{ weapon.ELEMENT | downcase | prepend: " " }}{% endif %}">{{ weapon.NAME }}</span></span>{:/nomarkdown}{%- if include.type == "Warrior" -%}<br /><span class="small-text">{{ weapon.CATEGORY }}</span>{%- endif -%}<br />![{{ weapon.NAME }}](/assets/img/weapons/{{ weapon.NAME | downcase }}.gif){:class="pixel-art"}{% include price.md price=weapon.PRICE %}{% include dropped-by.md item-name=weapon.NAME -%}
   |{{ weapon.REQUIREMENT_VALUE }}|
   {%- capture text -%}{%- if accuracy.size < 3 -%}{{ accuracy | append: "%" }}{%- else -%}Always hits{%- endif -%}{%- endcapture -%}{::nomarkdown}{% include bar.html fill=accuracy text=text %}{:/nomarkdown}|
   {%- assign fill = weapon.POWER | times: 100 | divided_by: 105 -%}{::nomarkdown}{% include bar.html fill=fill text=weapon.POWER %}{:/nomarkdown}|
