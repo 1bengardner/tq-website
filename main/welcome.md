@@ -3,8 +3,16 @@ layout: home
 permalink: "/"
 ---
 
-<p class="callout" style="float: right;">
-  ❓ <a href="about">What is Toshe's Quest?</a>
-</p>
+<ul class="callout horizontal" style="margin-left: 0;">
+  <li>
+    <a href="download">Download Toshe's Quest II</a>
+  </li>
+  <li>
+    <a href="compendium">The Compendium</a>
+  </li>
+  <li>
+    <a href="about">What is Toshe's Quest?</a>
+  </li>
+</ul>
 
-<h1 style="overflow-wrap: normal;">News</h1>
+# News

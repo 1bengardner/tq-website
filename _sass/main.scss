@@ -77,3 +77,11 @@ path.monocolour {
 .pixel-art {
   image-rendering: pixelated;
 }
+
+ul.horizontal > li {
+    display: inline-block;
+    
+    + li:before {
+      content: " ❧";
+    }
+}
