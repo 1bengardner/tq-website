@@ -78,10 +78,14 @@ path.monocolour {
   image-rendering: pixelated;
 }
 
-ul.horizontal > li {
+ul.horizontal li {
     display: inline-block;
     
     + li:before {
       content: " ❧";
     }
+}
+
+.hover-highlight:hover {
+  filter: brightness(107%) contrast(107%);
 }
