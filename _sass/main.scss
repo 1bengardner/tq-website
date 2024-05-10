@@ -78,12 +78,16 @@ path.monocolour {
   image-rendering: pixelated;
 }
 
-ul.horizontal li {
-    display: inline-block;
+ul {
+  list-style-type: "❧ ";
+}
     
-    + li:before {
-      content: " ❧";
-    }
+ul.horizontal li {
+  display: inline-block;
+  
+  + li:before {
+    content: " ❧";
+  }
 }
 
 .hover-highlight:hover {
