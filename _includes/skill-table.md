@@ -45,13 +45,13 @@
   {%- endif %}{:/nomarkdown}|
   {{- skill.EP_USED }}|{::nomarkdown}<ul>{:/nomarkdown}
   {%- if skill.USER_EFFECTS != "{}" -%}
-    {::nomarkdown}<li class="user-stat-changes">User stat changes<ul style="list-style-type: none;">{:/nomarkdown}
+    {::nomarkdown}<li title="User stat changes" class="user-stat-changes"><ul style="list-style-type: none; margin-left: -0.25em;">{:/nomarkdown}
     {%- assign effects = skill.USER_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
     {%- include skill-table-stats.md effects=effects -%}
     {::nomarkdown}</ul></li>{:/nomarkdown}
   {%- endif %}
   {%- if skill.TARGET_EFFECTS != "{}" -%}
-    {::nomarkdown}<li class="opponent-stat-changes">Opponent stat changes<ul style="list-style-type: none;">{:/nomarkdown}
+    {::nomarkdown}<li title="Opponent stat changes" class="opponent-stat-changes"><ul style="list-style-type: none; margin-left: -0.25em;">{:/nomarkdown}
     {%- assign effects = skill.TARGET_EFFECTS | remove: "{" | remove: "}" | split: ", " -%}
     {%- include skill-table-stats.md effects=effects -%}
     {::nomarkdown}</ul></li>{:/nomarkdown}
