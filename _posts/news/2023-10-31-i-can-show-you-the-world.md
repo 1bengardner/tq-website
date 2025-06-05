@@ -1,6 +1,6 @@
 ---
 title: "I can show you the world..."
-layout: post
+layout: blog
 ---
 
 The [compendium](/compendium) has been updated with a [World Map](/compendium/world-map).

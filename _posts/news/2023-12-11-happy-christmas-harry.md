@@ -1,6 +1,6 @@
 ---
 title: "Happy Christmas, Harry"
-layout: post
+layout: blog
 ---
 
 Happy holidays! Here's to a joyous 2024. ☕

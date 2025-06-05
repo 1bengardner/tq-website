@@ -1,6 +1,6 @@
 ---
 title: "Houston, we have liftoff!"
-layout: post
+layout: blog
 ---
 
 Toshe's Quest II has officially been released as a free Windows executable.

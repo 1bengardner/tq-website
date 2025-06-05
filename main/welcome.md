@@ -19,8 +19,9 @@ permalink: "/"
       </li>
     </strong>
   </ul>
+  <p>
+    <em>Find The Key to Macedonia!</em>
+  </p>
 </div>
-
-----
 
 # News
