@@ -15,4 +15,6 @@ Brace yourself, and let the quest begin!
 [![Disc 1 Tracklist](/assets/img/cd/ost_tracklist_1.png){:width="100px"}](/assets/img/cd/ost_tracklist_1.png)
 [![Disc 2 Tracklist](/assets/img/cd/ost_tracklist_2.png){:width="100px"}](/assets/img/cd/ost_tracklist_2.png)
 
-The complete Toshe's Quest II soundtrack is available for purchase on [Bandcamp](https://bengardner.bandcamp.com/album/toshes-quest-ii-original-soundtrack-discs-1-2). It contains 61 tracks in a digital format of your choosing.
+<del>The complete Toshe's Quest II soundtrack is available for purchase on [Bandcamp](https://bengardner.bandcamp.com/album/toshes-quest-ii-original-soundtrack-discs-1-2). It contains 61 tracks in a digital format of your choosing.</del>
+
+2025-11-27: The soundtrack has been removed. I am working on a better version that I hope to put out soon. Stay tuned.
